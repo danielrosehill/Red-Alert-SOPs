@@ -1,0 +1,64 @@
+title: "Daytime Readiness Posture"
+subtitle: "Red Alert SOP — No Mamad/Mamak"
+description: >
+  Checklist for maintaining daytime readiness when living in a building
+  without a residential protected room (Mamad) or floor protected room (Mamak).
+  You must be ready to reach an external shelter within the time available.
+
+sections:
+  - name: "On Your Person"
+    icon: "🧍"
+    items:
+      - id: D01
+        item: "Phone is ON, volume ON, location services ON"
+        detail: "Red Alert app installed, configured for your area, notifications enabled"
+      - id: D02
+        item: "Red Alert browser extension active (if at computer)"
+        detail: "Set to correct alert area, computer not on mute, tested recently"
+      - id: D03
+        item: "Keys on person"
+        detail: "Front door key accessible — do not leave locked inside"
+      - id: D04
+        item: "Wallet and ID (Teudat Zehut) on person or in go bag"
+        detail: ""
+      - id: D05
+        item: "Wearing closed-toe shoes suitable for running"
+        detail: "Not sandals, slippers, or barefoot"
+      - id: D06
+        item: "Glasses or contacts on (if needed)"
+        detail: ""
+
+  - name: "Go Bag & Exit Route"
+    icon: "🎒"
+    items:
+      - id: D07
+        item: "Go bag packed and positioned by front door"
+        detail: ""
+      - id: D08
+        item: "Daily bag check completed"
+        detail: "Medications, charged torch, water bottle, phone charger, ID copy"
+      - id: D09
+        item: "Hallway and exit route clear of obstructions"
+        detail: "No furniture, shoes, or items blocking path to front door"
+      - id: D10
+        item: "Front door can be opened quickly"
+        detail: "Not double-locked or chain-latched"
+
+  - name: "Situational Awareness"
+    icon: "📡"
+    items:
+      - id: D11
+        item: "Nearest 3 shelters — locations known and routes verified"
+        detail: "Walked the route recently; know backup if primary is locked"
+      - id: D12
+        item: "Time to shelter for your area — known and memorised"
+        detail: "Check HFC website Alerts tab for your locality"
+      - id: D13
+        item: "Protected space priority order — understood"
+        detail: "Shelter > Inner stairwell > Inner room (see decision flowchart)"
+      - id: D14
+        item: "Children / dependents — know their current location"
+        detail: "Ready to move them or confirm they are in a protected space"
+      - id: D15
+        item: "News / situation scan completed"
+        detail: "Check every 3 hours; adjust posture if escalation detected"

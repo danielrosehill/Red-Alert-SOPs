@@ -1,0 +1,64 @@
+title: "Nighttime Readiness Posture"
+subtitle: "Red Alert SOP — No Mamad/Mamak"
+description: >
+  Checklist for before-bed preparation when living in a building
+  without a residential protected room (Mamad) or floor protected room (Mamak).
+  You may need to wake, dress, and reach a shelter in under 90 seconds.
+
+sections:
+  - name: "Before Bed Setup"
+    icon: "🛏️"
+    items:
+      - id: N01
+        item: "News / situation scan completed before bed"
+        detail: "Check current threat level; assess if safe to sleep at home tonight"
+      - id: N02
+        item: "Phone charging, volume ON, location services ON"
+        detail: "Red Alert app active; Do Not Disturb disabled or alerts whitelisted"
+      - id: N03
+        item: "Clothes laid out by bed"
+        detail: "Full outfit ready to throw on in seconds — shirt, pants, underwear"
+      - id: N04
+        item: "Closed-toe shoes positioned by bed"
+        detail: "Ready to step into; not across the room"
+      - id: N05
+        item: "Torch / flashlight within arm's reach"
+        detail: "On nightstand or bedside — not buried in go bag"
+      - id: N06
+        item: "Glasses positioned by bed (if needed)"
+        detail: "Same spot every night — grab without thinking"
+      - id: N07
+        item: "Keys accessible and in known location"
+        detail: "By bed or on hook by front door — not in a coat pocket"
+
+  - name: "Go Bag & Exit Route"
+    icon: "🎒"
+    items:
+      - id: N08
+        item: "Go bag packed and positioned by front door"
+        detail: ""
+      - id: N09
+        item: "Medications in go bag (if taking)"
+        detail: ""
+      - id: N10
+        item: "Power bank on charge and ready to grab"
+        detail: "Near go bag or by front door"
+      - id: N11
+        item: "Hallway and exit route clear of obstructions"
+        detail: "Can navigate in the dark without tripping"
+      - id: N12
+        item: "Front door can be opened quickly"
+        detail: "Not double-locked; key at hand if needed"
+
+  - name: "Sleep Conditions"
+    icon: "😴"
+    items:
+      - id: N13
+        item: "No earplugs — hearing must be clear"
+        detail: "You must be able to hear the siren and phone alert"
+      - id: N14
+        item: "Protected space priority order — understood"
+        detail: "Shelter > Inner stairwell > Inner room (see decision flowchart)"
+      - id: N15
+        item: "Route to nearest shelter — known and walkable in the dark"
+        detail: "Have you walked it at night? Know alternate if primary locked?"

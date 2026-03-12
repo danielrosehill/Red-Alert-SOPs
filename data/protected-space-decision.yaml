@@ -1,0 +1,85 @@
+title: "Choosing a Protected Space"
+subtitle: "Decision Flowchart — Home Front Command Guidelines"
+source: "Israel Home Front Command (Pikud HaOref) — https://www.oref.org.il"
+description: >
+  Priority order for selecting a protected space when a Red Alert sounds.
+  Choose the highest-priority option you can reach within the time available to shelter.
+
+priority_order:
+  - priority: 1
+    name: "Mamad / Mamak / Mamam"
+    description: "Residential protected room, floor protected room, or institutional protected space"
+    instructions:
+      - "Close the door tightly and turn the handle 90 degrees"
+      - "Close the external steel window AND the internal glass window"
+      - "If double-wing sliding glass window is installed, remove wings in advance and store outside the room"
+    note: "This is the preferred choice if available in your building."
+
+  - priority: 2
+    name: "Shelter"
+    description: "Communal building shelter or public shelter"
+    instructions:
+      - "Communal shelter in building — must be reachable within time to shelter, OR reachable via inner stairwell (no windows)"
+      - "Public shelter — must be reachable within time to shelter"
+    note: "If no Mamad/Mamak/Mamam exists, this is the next best option."
+
+  - priority: 3
+    name: "Inner Stairwell"
+    description: "Stairwell without windows or exterior walls"
+    instructions:
+      - "Stay in the CENTER of the stairwell"
+      - "NOT on the top floor, NOT on the bottom/entrance floor"
+      - "Building with 3+ floors: stay on a floor with at least 2 floors above"
+      - "3-story building: stay on the middle floor staircase"
+      - "Stay ON the staircase, not in the floor hallway"
+      - "Ensure stairwell is clear of equipment and obstacles"
+    why_it_works: >
+      An inner stairwell is surrounded by apartment walls, made of poured concrete,
+      and is the structural core of the building. It is stable, durable, and has
+      been proven to save lives.
+
+  - priority: 4
+    name: "Inner Room"
+    description: "Innermost space with maximum walls, minimum windows"
+    instructions:
+      - "Choose a room surrounded by as many walls as possible"
+      - "Minimize windows and openings"
+      - "Sit close to an inner wall"
+      - "Sit BELOW the window line"
+      - "Do NOT sit facing the door"
+      - "Close all doors and windows"
+      - "An inner corridor can also work"
+    why_it_works: >
+      The innermost space is surrounded by additional rooms and walls,
+      affording greater protection against blast and shrapnel.
+
+  - priority: 5
+    name: "Last Resort — Open Ground"
+    description: "No building or protected space available"
+    instructions:
+      - "Lie down on the ground"
+      - "Protect your head with your hands"
+    note: "Use only if no building or structure is reachable in time."
+
+not_valid_spaces:
+  - "Kitchen"
+  - "Bathroom"
+  - "Toilet"
+  - "Building entrance lobby (risk of shrapnel and blast waves)"
+  - "Prefabricated structures (caravans, wooden houses) — evacuate immediately"
+  - "Areas with ceramics, porcelain, or glass that may shatter"
+
+important_notes:
+  - "Wait 10 minutes in the protected space after alert sounds"
+  - "Keep the Mamad steel and glass windows closed until end of emergency"
+  - "Maintain clear passages and stairwells at all times"
+  - "Place a chair in stairwell for elderly individuals"
+  - "If in a caravan/prefab: leave immediately, reach shelter or lie on ground"
+  - "Practice reaching your protected space from different rooms"
+
+accessibility:
+  - "Practice reaching the space from kitchen, living room, and bedroom"
+  - "Clear routes of rugs, plant pots, chairs, and other obstacles"
+  - "Move quickly but carefully; use walls, railings, or mobility aids"
+  - "If using wheelchair/walker: move bed into protected space against inner wall, below window line, not facing door"
+  - "If difficulty transferring from sofa to wheelchair: place sofa against inner wall, below window line, not facing door"
