@@ -1,14 +1,17 @@
 // Protected Space Decision Flowchart
-// SOP-PSP-08
+// SOP-8
 // Based on Israel Home Front Command (Pikud HaOref) guidelines
+
+#let il-blue = rgb("#003893")
+#let il-blue-light = rgb("#e8eef7")
 
 #let page-badge = context {
   box(
     fill: rgb("#f5d000"),
-    inset: (x: 0.4em, y: 0.15em),
+    inset: (x: 0.5em, y: 0.2em),
     radius: 2pt,
   )[
-    #text(font: "Roboto", size: 7.5pt, weight: "bold", fill: black)[
+    #text(font: "Roboto", size: 9pt, weight: "bold", fill: black)[
       #counter(page).display() / #counter(page).final().first()
     ]
   ]
@@ -16,24 +19,23 @@
 
 #set page(
   paper: "a4",
-  margin: (top: 1.8cm, bottom: 2.8cm, left: 1.5cm, right: 1.5cm),
+  margin: (top: 1.8cm, bottom: 3cm, left: 1.5cm, right: 1.5cm),
   footer: context {
-    v(0.4em)
+    v(0.3em)
     line(length: 100%, stroke: 0.5pt + rgb("#cccccc"))
     v(0.2em)
     grid(
-      columns: (1fr, auto, auto),
-      gutter: 0.4em,
+      columns: (1fr, auto),
+      gutter: 0.6em,
       [
         #set text(font: "Roboto", size: 6.5pt, fill: rgb("#888888"))
-        *SOP-PSP-08* · *By:* Daniel Rosehill + Claude Opus · Share freely with attribution \
+        *SOP-8* · *By:* Daniel Rosehill + Claude Opus · Share freely with attribution \
         *DISCLAIMER:* Not an official government resource. Use at your own risk. Based on HFC (Pikud HaOref) publications as of 12 Mar 2026. Official guidance: oref.org.il.
       ],
-      align(center + horizon)[
-        #page-badge
-      ],
-      align(right + bottom)[
+      align(center)[
         #image("../assets/image.png", width: 2cm)
+        #v(0.1em)
+        #page-badge
       ],
     )
   },
@@ -44,16 +46,16 @@
 // Title
 #align(center)[
   #block(
-    fill: rgb("#c0392b"),
+    fill: il-blue,
     width: 100%,
     inset: (x: 1em, y: 0.5em),
     radius: 4pt,
   )[
-    #text(fill: rgb("#f5b7b1"), size: 8pt, weight: "bold")[SOP-PSP-08]
+    #text(fill: rgb("#8ab4f8"), size: 8pt, weight: "bold")[SOP-8]
     #v(0.1em)
     #text(fill: white, weight: "bold", size: 15pt)[Choosing a Protected Space]
     #v(0.1em)
-    #text(fill: rgb("#f5b7b1"), size: 8.5pt)[Decision Flowchart — Home Front Command Guidelines]
+    #text(fill: rgb("#8ab4f8"), size: 8.5pt)[Decision Flowchart — Home Front Command Guidelines]
   ]
 ]
 
@@ -65,11 +67,11 @@
 
 // Priority box helper
 #let priority-box(number, name, desc, instructions, note: none) = {
-  let num-color = if number == "1" { rgb("#922b21") } else if number == "2" { rgb("#b03a2e") } else if number == "3" { rgb("#cb4335") } else if number == "4" { rgb("#d4574a") } else { rgb("#666666") }
+  let num-color = if number == "1" { rgb("#003893") } else if number == "2" { rgb("#1a4fa0") } else if number == "3" { rgb("#3366ad") } else if number == "4" { rgb("#4d7dba") } else { rgb("#666666") }
 
   block(
     width: 100%,
-    stroke: 0.75pt + rgb("#d4a8a8"),
+    stroke: 0.75pt + rgb("#9bb0d0"),
     radius: 4pt,
     clip: true,
   )[
@@ -85,7 +87,7 @@
         ]
       ],
       block(inset: (x: 0.5em, y: 0.3em))[
-        #text(weight: "bold", size: 9.5pt, fill: rgb("#922b21"))[#name]
+        #text(weight: "bold", size: 9.5pt, fill: il-blue)[#name]
         #h(0.4em)
         #text(size: 7.5pt, fill: rgb("#666"))[#desc]
         #v(0.1em)
@@ -105,8 +107,8 @@
 #priority-box("1", "Mamad / Mamak / Mamam",
   "Residential, floor, or institutional protected room",
   (
-    "Close door tightly, turn handle 90°",
-    "Close external steel window AND internal glass window",
+    "**Close** door tightly, turn handle 90°",
+    "Close external **steel window** AND internal **glass window**",
     "If double-wing glass: remove wings in advance, store outside room",
   ),
   note: "Preferred choice. If your building has one, always use it.",
@@ -115,8 +117,8 @@
 #priority-box("2", "Shelter",
   "Communal building shelter or public shelter",
   (
-    "Building shelter — reachable within time to shelter, or via windowless inner stairwell",
-    "Public shelter — must be reachable within time to shelter",
+    "**Building shelter** — reachable within time to shelter, or via windowless inner stairwell",
+    "**Public shelter** — must be reachable within time to shelter",
   ),
   note: "Best option if no Mamad/Mamak/Mamam in your building.",
 )
@@ -124,10 +126,10 @@
 #priority-box("3", "Inner Stairwell",
   "Stairwell without windows or exterior walls",
   (
-    "Stay in the CENTER — not top floor, not bottom/entrance floor",
-    "3+ floor building: stay where at least 2 floors are above you",
-    "3-story building: middle floor staircase only",
-    "Stay ON the staircase, not in the hallway; keep clear of obstacles",
+    "Stay in the **CENTER** — not top floor, not bottom/entrance floor",
+    "3+ floor building: stay where at least **2 floors** are above you",
+    "3-story building: **middle floor** staircase only",
+    "Stay **ON the staircase**, not in the hallway; keep clear of obstacles",
   ),
   note: "Poured concrete structural core — proven to save lives.",
 )
@@ -135,16 +137,16 @@
 #priority-box("4", "Inner Room",
   "Innermost space, maximum walls, minimum windows",
   (
-    "Sit close to an inner wall, BELOW window line, NOT facing the door",
-    "Close all doors and windows; an inner corridor also works",
-    "No ceramics, porcelain, or glass that may shatter",
+    "Sit close to an **inner wall**, BELOW window line, NOT facing the door",
+    "**Close** all doors and windows; an inner corridor also works",
+    "No **ceramics, porcelain, or glass** that may shatter",
   ),
 )
 
 #priority-box("5", "Last Resort — Open Ground",
   "No building or structure reachable in time",
   (
-    "Lie flat on the ground and protect your head with your hands",
+    "**Lie flat** on the ground and protect your head with your hands",
   ),
   note: "Also applies if in a caravan/prefab and cannot reach shelter in time.",
 )

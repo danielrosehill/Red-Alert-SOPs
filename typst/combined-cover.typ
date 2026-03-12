@@ -1,5 +1,6 @@
 // Cover page and Table of Contents for the combined SOP document
-// This is compiled separately and prepended to the concatenated PDF
+
+#let il-blue = rgb("#003893")
 
 #set page(
   paper: "a4",
@@ -16,7 +17,7 @@
         *By:* Daniel Rosehill + Claude Opus · Share freely with attribution \
         *DISCLAIMER:* Not an official government resource. Use at your own risk. Based on HFC (Pikud HaOref) publications as of 12 Mar 2026. Official guidance: oref.org.il.
       ],
-      align(right + bottom)[
+      align(center)[
         #image("../assets/image.png", width: 2.5cm)
       ],
     )
@@ -28,16 +29,16 @@
 
 #align(center)[
   #block(
-    fill: rgb("#c0392b"),
+    fill: il-blue,
     width: 100%,
     inset: (x: 1.5em, y: 1em),
     radius: 6pt,
   )[
     #text(fill: white, weight: "bold", size: 24pt)[Red Alert SOPs]
     #v(0.2em)
-    #text(fill: rgb("#f5b7b1"), size: 12pt)[Standard Operating Procedures for Rocket & Missile Alerts]
+    #text(fill: rgb("#8ab4f8"), size: 12pt)[Standard Operating Procedures for Rocket & Missile Alerts]
     #v(0.15em)
-    #text(fill: rgb("#f5b7b1"), size: 10pt)[Based on Israel Home Front Command (Pikud HaOref) Guidelines]
+    #text(fill: rgb("#8ab4f8"), size: 10pt)[Based on Israel Home Front Command (Pikud HaOref) Guidelines]
   ]
 ]
 
@@ -50,9 +51,9 @@
 #v(0.6cm)
 
 // Table of Contents
-#text(weight: "bold", size: 14pt, fill: rgb("#922b21"))[Table of Contents]
+#text(weight: "bold", size: 14pt, fill: il-blue)[Table of Contents]
 #v(0.3em)
-#line(length: 100%, stroke: 0.75pt + rgb("#d4a8a8"))
+#line(length: 100%, stroke: 0.75pt + rgb("#9bb0d0"))
 #v(0.25em)
 
 #let toc-entry(id, title, desc) = {
@@ -77,17 +78,17 @@
   v(0.25em)
 }
 
-#toc-entry("SOP-DAY-01", "Daytime Readiness Posture", "Daily readiness checklist for buildings without a Mamad/Mamak")
-#toc-entry("SOP-NGT-02", "Nighttime Readiness Posture", "Before-bed setup and sleep-ready checklist")
-#toc-entry("SOP-ESC-03", "Escalation Readiness", "72-hour preparation when the security situation deteriorates")
-#toc-entry("SOP-SHL-04", "Shelter Check", "Find and verify your nearest shelters before you need them")
-#toc-entry("SOP-MOB-05", "Readiness — Elderly / Mobility Limited", "Adapted readiness posture for mobility-limited individuals")
-#toc-entry("SOP-SIR-06", "Siren Response — Quick Reference", "What to do when the siren sounds — all scenarios (adults)")
-#toc-entry("SOP-INF-07", "Siren Response — With Infant", "Siren response procedures with a baby 0–18 months")
-#toc-entry("SOP-PSP-08", "Choosing a Protected Space", "Priority decision flowchart for selecting shelter")
+#toc-entry("SOP-1", "Daytime Readiness Posture", "Daily readiness checklist for buildings without a Mamad/Mamak")
+#toc-entry("SOP-2", "Nighttime Readiness Posture", "Before-bed setup and sleep-ready checklist")
+#toc-entry("SOP-3", "Escalation Readiness", "72-hour preparation when the security situation deteriorates")
+#toc-entry("SOP-4", "Shelter Check", "Find and verify your nearest shelters before you need them")
+#toc-entry("SOP-5", "Readiness — Elderly / Mobility Limited", "Adapted readiness posture for mobility-limited individuals")
+#toc-entry("SOP-6", "Siren Response — Quick Reference", "What to do when the siren sounds — all scenarios (adults)")
+#toc-entry("SOP-7", "Siren Response — With Infant", "Siren response procedures with a baby 0–18 months")
+#toc-entry("SOP-8", "Choosing a Protected Space", "Priority decision flowchart for selecting shelter")
 
 #v(0.4em)
-#line(length: 100%, stroke: 0.75pt + rgb("#d4a8a8"))
+#line(length: 100%, stroke: 0.75pt + rgb("#9bb0d0"))
 #v(0.2em)
 #text(size: 8pt, fill: rgb("#888"))[
   *Version:* 12 March 2026 · *Total SOPs:* 8 \

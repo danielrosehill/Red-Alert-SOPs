@@ -1,13 +1,15 @@
 // Siren Response Quick Reference — With Infant (0–18 months)
-// SOP-INF-07
+// SOP-7
+
+#let il-blue = rgb("#003893")
 
 #let page-badge = context {
   box(
     fill: rgb("#f5d000"),
-    inset: (x: 0.4em, y: 0.15em),
+    inset: (x: 0.5em, y: 0.2em),
     radius: 2pt,
   )[
-    #text(font: "Roboto", size: 7.5pt, weight: "bold", fill: black)[
+    #text(font: "Roboto", size: 9pt, weight: "bold", fill: black)[
       #counter(page).display() / #counter(page).final().first()
     ]
   ]
@@ -15,24 +17,23 @@
 
 #set page(
   paper: "a4",
-  margin: (top: 1.6cm, bottom: 2.8cm, left: 1.3cm, right: 1.3cm),
+  margin: (top: 1.6cm, bottom: 3cm, left: 1.3cm, right: 1.3cm),
   footer: context {
-    v(0.4em)
+    v(0.3em)
     line(length: 100%, stroke: 0.5pt + rgb("#ccc"))
     v(0.2em)
     grid(
-      columns: (1fr, auto, auto),
-      gutter: 0.4em,
+      columns: (1fr, auto),
+      gutter: 0.6em,
       [
         #set text(font: "Roboto", size: 6pt, fill: rgb("#888"))
-        *SOP-INF-07* · *By:* Daniel Rosehill + Claude Opus · Share freely with attribution \
+        *SOP-7* · *By:* Daniel Rosehill + Claude Opus · Share freely with attribution \
         *DISCLAIMER:* Not an official government resource. Use at your own risk. Based on HFC (Pikud HaOref) publications as of 12 Mar 2026. Official guidance: oref.org.il. Always wait 10 min.
       ],
-      align(center + horizon)[
-        #page-badge
-      ],
-      align(right + bottom)[
+      align(center)[
         #image("../assets/image.png", width: 1.6cm)
+        #v(0.1em)
+        #page-badge
       ],
     )
   },
@@ -42,16 +43,16 @@
 
 #align(center)[
   #block(
-    fill: rgb("#c0392b"),
+    fill: il-blue,
     width: 100%,
     inset: (x: 1em, y: 0.45em),
     radius: 4pt,
   )[
-    #text(fill: rgb("#f5b7b1"), size: 8pt, weight: "bold")[SOP-INF-07]
+    #text(fill: rgb("#8ab4f8"), size: 8pt, weight: "bold")[SOP-7]
     #v(0.1em)
     #text(fill: white, weight: "bold", size: 14pt)[Siren Response — With Infant]
     #v(0.1em)
-    #text(fill: rgb("#f5b7b1"), size: 8pt)[Baby 0–18 months · What to do when the Red Alert sounds]
+    #text(fill: rgb("#8ab4f8"), size: 8pt)[Baby 0–18 months · What to do when the Red Alert sounds]
   ]
 ]
 
@@ -73,11 +74,11 @@
 #let scenario(name, steps, notes: ()) = {
   block(
     width: 100%,
-    stroke: 0.6pt + rgb("#d4a8a8"),
+    stroke: 0.6pt + rgb("#9bb0d0"),
     radius: 3pt,
     inset: (x: 0.5em, y: 0.3em),
   )[
-    #text(weight: "bold", size: 8.5pt, fill: rgb("#922b21"))[#name]
+    #text(weight: "bold", size: 8.5pt, fill: il-blue)[#name]
     #v(0.08em)
     #for (i, s) in steps.enumerate() [
       #text(weight: "bold", fill: rgb("#444"))[#str(i + 1).] #s #linebreak()
@@ -95,44 +96,44 @@
 
 #scenario("At Home — WITH Mamad",
   (
-    "Scoop up baby, go to Mamad",
-    "Close blast door (partner seals if present)",
-    "Sit against inner wall, hold baby close",
-    "Comfort: pacifier, feed, skin contact",
-    "Wait 10 minutes",
+    "**Scoop up** baby, go to Mamad",
+    "**Close** blast door (partner seals if present)",
+    "Sit against **inner wall**, hold baby close",
+    "Comfort: **pacifier**, feed, skin contact",
+    "**Wait 10 minutes**",
   ),
   notes: ("Keep baby supplies stashed in Mamad: nappies, wipes, pacifier, bottle"),
 )
 
 #scenario("At Home — WITHOUT Mamad",
   (
-    "Pick up baby — do not put down until in shelter",
-    "Shelter reachable? Go. Hold baby against chest, one arm free for doors",
-    "No shelter? Stairwell centre (not top/ground floor), sit and shield baby",
-    "No stairwell? Innermost room, floor, inner wall, curl over baby",
-    "Wait 10 minutes",
+    "**Pick up** baby — do not put down until in shelter",
+    "Shelter reachable? **Go**. Hold baby against chest, one arm free for doors",
+    "No shelter? **Stairwell** centre (not top/ground floor), sit and shield baby",
+    "No stairwell? **Innermost room**, floor, inner wall, curl over baby",
+    "**Wait 10 minutes**",
   ),
   notes: ("Pre-position a baby carrier by the door for hands-free evacuation"),
 )
 
 #scenario("Night — Baby Sleeping, No Mamad",
   (
-    "Go straight to baby's room, pick them up",
-    "Do NOT get dressed first — baby then shoes/keys",
-    "If both parents: one takes baby, one takes go bag + torch",
-    "Shelter or stairwell or inner room — hold baby, sit down",
-    "Wait 10 minutes — baby may cry, that's OK",
+    "Go straight to baby's room, **pick them up**",
+    "Do **NOT** get dressed first — baby then shoes/keys",
+    "If both parents: one takes **baby**, one takes go bag + torch",
+    "Shelter or stairwell or inner room — **hold baby**, sit down",
+    "**Wait 10 minutes** — baby may cry, that's OK",
   ),
   notes: ("Pre-pack a blanket to grab with baby", "Room-share during escalations = faster response"),
 )
 
 #scenario("Outside / Walking",
   (
-    "Take baby OUT of stroller — hold against chest",
-    "LEAVE the stroller behind",
-    "Enter nearest solid building — stairwell or inner room",
-    "If no building: lie face down, baby under you, shield with body",
-    "Wait 10 minutes",
+    "Take baby **OUT of stroller** — hold against chest",
+    "**LEAVE** the stroller behind",
+    "Enter nearest **solid building** — stairwell or inner room",
+    "If no building: **lie face down**, baby under you, shield with body",
+    "**Wait 10 minutes**",
   ),
   notes: ("Baby carrier >> stroller for siren readiness outdoors", "Know shelters on regular routes"),
 )
@@ -141,33 +142,33 @@
 
 #scenario("Driving — Baby in Car Seat",
   (
-    "Pull over, hazards on, engine off",
-    "Unbuckle harness and lift baby out (faster than detaching seat)",
-    "Exit car — hold baby against chest",
-    "Enter building if reachable, or lie on ground shielding baby",
-    "Wait 10 minutes",
+    "**Pull over**, hazards on, engine off",
+    "**Unbuckle** harness and lift baby out (faster than detaching seat)",
+    "**Exit car** — hold baby against chest",
+    "Enter **building** if reachable, or lie on ground shielding baby",
+    "**Wait 10 minutes**",
   ),
   notes: ("Practise unbuckling the harness quickly", "Two adults: one grabs baby, one grabs nappy bag"),
 )
 
 #scenario("On a Bus",
   (
-    "Hold baby securely — take OUT of stroller",
-    "Exit bus when doors open — leave stroller on bus",
-    "Enter nearest building",
-    "If none: move away from bus, lie on ground shielding baby",
-    "Wait 10 minutes",
+    "Hold baby securely — take **OUT of stroller**",
+    "**Exit bus** when doors open — leave stroller on bus",
+    "Enter nearest **building**",
+    "If none: move away from bus, **lie on ground** shielding baby",
+    "**Wait 10 minutes**",
   ),
   notes: ("Ask other passengers for help if needed"),
 )
 
 #scenario("In a Public Building (Mall, Clinic, Office)",
   (
-    "Pick up baby — OUT of stroller",
-    "Follow signs/staff to designated shelter",
-    "No shelter? Stairwell centre. No elevator.",
-    "Sit against inner wall, shield baby, away from glass",
-    "Wait 10 minutes",
+    "**Pick up** baby — OUT of stroller",
+    "Follow signs/staff to designated **shelter**",
+    "No shelter? **Stairwell** centre. No elevator.",
+    "Sit against **inner wall**, shield baby, away from glass",
+    "**Wait 10 minutes**",
   ),
   notes: ("At Tipat Halav/clinic: ask staff for shelter immediately", "You can carry while breastfeeding"),
 )
