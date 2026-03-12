@@ -35,9 +35,15 @@ sections:
     icon: "🎒"
     items:
       - id: N08
+        item: "Baby carrier by front door and ready to grab"
+        detail: "Wrap or structured carrier — you may need both hands free"
+      - id: N09
         item: "Go bag packed and positioned by front door"
         detail: ""
-      - id: N09
+      - id: N10
+        item: "Infant supplies in go bag"
+        detail: "Pacifier, bottle/formula, nappies, wipes, muslin/blanket"
+      - id: N11
         item: "Medications in go bag (if taking)"
         detail: ""
       - id: N10

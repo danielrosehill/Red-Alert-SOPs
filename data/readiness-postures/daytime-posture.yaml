@@ -32,9 +32,12 @@ sections:
     icon: "🎒"
     items:
       - id: D07
+        item: "Baby carrier by front door and ready to grab"
+        detail: "Wrap or structured carrier — hands-free evacuation is far faster than a stroller"
+      - id: D08
         item: "Go bag packed and positioned by front door"
         detail: ""
-      - id: D08
+      - id: D09
         item: "Daily bag check completed"
         detail: "Medications, charged torch, water bottle, phone charger, ID copy"
       - id: D09

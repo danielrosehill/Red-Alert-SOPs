@@ -19,6 +19,7 @@
     (
       name: "Go Bag & Exit Route",
       items: (
+        (item: "Baby carrier by front door and ready to grab", detail: "Wrap or structured carrier — hands-free evacuation is far faster than a stroller"),
         (item: "Go bag packed and positioned by front door", detail: ""),
         (item: "Daily bag check completed", detail: "Medications, charged torch, water bottle, phone charger, copy of ID"),
         (item: "Hallway and exit route clear of obstructions", detail: "No furniture, shoes, or items blocking path to front door"),

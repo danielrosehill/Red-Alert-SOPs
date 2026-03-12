@@ -20,7 +20,9 @@
     (
       name: "Go Bag & Exit Route",
       items: (
+        (item: "Baby carrier by front door and ready to grab", detail: "Wrap or structured carrier — you may need both hands free"),
         (item: "Go bag packed and positioned by front door", detail: ""),
+        (item: "Infant supplies in go bag", detail: "Pacifier, bottle/formula, nappies, wipes, muslin/blanket"),
         (item: "Medications in go bag (if taking)", detail: ""),
         (item: "Power bank on charge and ready to grab", detail: "Near go bag or by front door"),
         (item: "Hallway and exit route clear of obstructions", detail: "Can navigate in the dark without tripping"),
