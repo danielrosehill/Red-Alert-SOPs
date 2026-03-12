@@ -6,85 +6,94 @@ Standard Operating Procedures for Red Alert (rocket/missile/hostile aerial vehic
 
 > **These SOPs were written specifically for people living in buildings WITHOUT a Mamad (residential protected room) or Mamak (floor protected room).** If your building has a Mamad or Mamak, your primary action is simply to enter it when a siren sounds. These SOPs address the more complex and stressful situation of needing to reach an external shelter or choose an alternative protected space under extreme time pressure. The siren response cards cover both with-Mamad and without-Mamad scenarios for completeness.
 
-## What's Inside
+---
+
+## Combined PDFs (Download & Print)
+
+| Collection | Contents | PDF |
+|---|---|---|
+| **All SOPs** | Complete collection — 12 SOPs, 17 pages | [red-alert-sops-complete.pdf](output/combined/red-alert-sops-complete.pdf) |
+| **Readiness Postures** | SOP-1 through SOP-5 + SOP-8 | [readiness-postures-combined.pdf](output/combined/readiness-postures-combined.pdf) |
+| **Siren Responses** | SOP-6 + SOP-7 | [siren-responses-combined.pdf](output/combined/siren-responses-combined.pdf) |
+| **Preparedness** | SOP-9 through SOP-12 | [preparedness-combined.pdf](output/combined/preparedness-combined.pdf) |
+
+---
+
+## Individual SOPs
 
 ### Readiness Postures (Checklists)
 
-- **Daytime Readiness Posture** — What to have on your person, go bag, exit route, and situational awareness during the day.
-- **Nighttime Readiness Posture** — Before-bed preparation so you can wake, dress, and reach a shelter in under 90 seconds in the dark.
-- **Choosing a Protected Space** — Priority order for selecting a protected space (Mamad > Shelter > Stairwell > Inner room > Ground).
-- **Shelter Check** — How to find, verify, and time your route to your nearest shelters. Do this BEFORE you need it.
-- **Escalation Readiness** — 72-hour preparation checklist for when the geopolitical situation deteriorates: water, food, power, medical, documents, household supplies.
-- **Elderly / Mobility Limited** — Readiness posture for individuals with mobility limitations or families caring for them: protected space setup, equipment, and buddy system.
+| SOP | Title | Description | PDF |
+|---|---|---|---|
+| SOP-1 | Daytime Readiness Posture | What to have on your person, go bag, exit route, and situational awareness | [PDF](output/readiness-postures/daytime-posture.pdf) |
+| SOP-2 | Nighttime Readiness Posture | Before-bed preparation — wake, dress, reach shelter in under 90 seconds | [PDF](output/readiness-postures/nighttime-posture.pdf) |
+| SOP-3 | Escalation Readiness | 72-hour preparation when the security situation deteriorates | [PDF](output/readiness-postures/escalation-readiness.pdf) |
+| SOP-4 | Shelter Check | Find, verify, and time your route to nearest shelters | [PDF](output/readiness-postures/shelter-check.pdf) |
+| SOP-5 | Readiness — Elderly / Mobility Limited | Adapted readiness posture for mobility-limited individuals | [PDF](output/readiness-postures/mobility-limited-posture.pdf) |
+| SOP-8 | Choosing a Protected Space | Priority decision flowchart for selecting shelter | [PDF](output/readiness-postures/protected-space-flowchart.pdf) |
 
 ### Siren Response Cards (What To Do NOW)
 
-- **Siren Response — Quick Reference** — One-page card covering 10 scenarios: at home (with/without Mamad), driving, on a bus, outside on foot, in a public building, in an elevator, in a prefab/caravan, with young children, and with mobility limitations.
-- **Siren Response — With Infant** — One-page card for parents with a baby (0–18 months): home with/without Mamad, night with sleeping baby, outside with stroller, driving with car seat, on a bus, and in public buildings. Includes go-bag additions for infants.
+| SOP | Title | Description | PDF |
+|---|---|---|---|
+| SOP-6 | Siren Response — Quick Reference | 10 scenarios: home, driving, bus, outside, public building, elevator, prefab, children, mobility | [PDF](output/siren-responses/siren-responses.pdf) |
+| SOP-7 | Siren Response — With Infant | 7 scenarios for parents with a baby (0–18 months) + infant go-bag additions | [PDF](output/siren-responses/siren-responses-with-infant.pdf) |
+
+### Preparedness (Based on HFC Guidelines)
+
+| SOP | Title | Description | PDF |
+|---|---|---|---|
+| SOP-9 | Emergency Supplies Kit | 72-hour supply kit — water, food, power, medical, storage & maintenance | [PDF](output/preparedness/emergency-supplies.pdf) |
+| SOP-10 | Family Emergency Plan | Family coordination, roles, drills, meeting places, communication plan | [PDF](output/preparedness/family-emergency-plan.pdf) |
+| SOP-11 | Home Preparation | Securing your home — Mamad inspection, furniture, hazmat, escape routes | [PDF](output/preparedness/home-preparation.pdf) |
+| SOP-12 | Emergency Contacts & Communication | Essential phone numbers, alert channels, information discipline | [PDF](output/preparedness/emergency-contacts.pdf) |
+
+---
 
 ## Structure
 
 ```
-data/
-  readiness-postures/
-    daytime-posture.yaml
-    nighttime-posture.yaml
-    protected-space-decision.yaml
-    shelter-check.yaml
-    escalation-readiness.yaml
-    mobility-limited-posture.yaml
-  siren-responses/
-    siren-response-home-with-mamad.yaml
-    siren-response-home-without-mamad.yaml
-    siren-response-driving.yaml
-    siren-response-bus.yaml
-    siren-response-outside.yaml
-    siren-response-public-building.yaml
-    siren-response-elevator.yaml
-    siren-response-prefab.yaml
-    siren-response-with-children.yaml
-    siren-response-mobility-limited.yaml
-  siren-responses-with-infant/
-    siren-response-infant-home-with-mamad.yaml
-    siren-response-infant-home-without-mamad.yaml
-    siren-response-infant-driving.yaml
-    siren-response-infant-bus.yaml
-    siren-response-infant-outside.yaml
-    siren-response-infant-night.yaml
-    siren-response-infant-public-building.yaml
 typst/
-  checklist.typ
-  disclaimer.typ
-  daytime-posture.typ
-  nighttime-posture.typ
-  protected-space-flowchart.typ
-  shelter-check.typ
-  escalation-readiness.typ
-  mobility-limited-posture.typ
-  siren-responses.typ
-  siren-responses-with-infant.typ
+  checklist.typ                    # Shared checklist template
+  combined-cover.typ               # Cover page + table of contents
+  daytime-posture.typ              # SOP-1
+  nighttime-posture.typ            # SOP-2
+  escalation-readiness.typ         # SOP-3
+  shelter-check.typ                # SOP-4
+  mobility-limited-posture.typ     # SOP-5
+  siren-responses.typ              # SOP-6
+  siren-responses-with-infant.typ  # SOP-7
+  protected-space-flowchart.typ    # SOP-8
+  emergency-supplies.typ           # SOP-9
+  family-emergency-plan.typ        # SOP-10
+  home-preparation.typ             # SOP-11
+  emergency-contacts.typ           # SOP-12
 assets/
-  image.png                          # ביחד ננצח | עם ישראל חי
+  image.png                        # ביחד ננצח | עם ישראל חי
 output/
-  readiness-postures/                # Generated PDFs (A4)
+  readiness-postures/              # Individual PDFs — SOP-1 to SOP-5, SOP-8
+  siren-responses/                 # Individual PDFs — SOP-6, SOP-7
+  preparedness/                    # Individual PDFs — SOP-9 to SOP-12
+  combined/                        # Combined PDFs by type + master
+data/
+  readiness-postures/              # YAML source data
   siren-responses/
+  siren-responses-with-infant/
 ```
 
 ## Building the PDFs
 
-Requires [Typst](https://typst.app/) installed. Must use `--root .` from the repo root so Typst can access `assets/`:
+Requires [Typst](https://typst.app/) and `pdfunite` (from `poppler-utils`) or `ghostscript`.
 
 ```bash
-# From the repo root
-for f in daytime-posture nighttime-posture protected-space-flowchart \
-         shelter-check escalation-readiness mobility-limited-posture; do
-  typst compile --root . "typst/$f.typ" "output/readiness-postures/$f.pdf"
-done
-
-for f in siren-responses siren-responses-with-infant; do
-  typst compile --root . "typst/$f.typ" "output/siren-responses/$f.pdf"
-done
+./build.sh
 ```
+
+This compiles all 12 individual SOPs, creates combined PDFs by type, and a master combined PDF.
+
+## Version
+
+**v1.0** — 12 March 2026
 
 ## Authors
 

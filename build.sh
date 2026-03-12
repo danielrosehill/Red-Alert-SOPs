@@ -1,7 +1,20 @@
 #!/usr/bin/env bash
-# Build all Red Alert SOP PDFs and create a concatenated master PDF
+# Build all Red Alert SOP PDFs and create concatenated PDFs (by type + master)
 set -euo pipefail
 cd "$(dirname "$0")"
+
+# PDF concatenation helper
+concat_pdfs() {
+  local output="$1"; shift
+  if command -v pdfunite &>/dev/null; then
+    pdfunite "$@" "$output"
+  elif command -v gs &>/dev/null; then
+    gs -dBATCH -dNOPAUSE -q -sDEVICE=pdfwrite -sOutputFile="$output" "$@"
+  else
+    echo "ERROR: Need pdfunite (poppler-utils) or gs (ghostscript) to concatenate PDFs"
+    exit 1
+  fi
+}
 
 echo "=== Building individual PDFs ==="
 
@@ -21,7 +34,7 @@ typst_files=(
 )
 
 # Ensure output directories exist
-mkdir -p output/readiness-postures output/siren-responses output/preparedness
+mkdir -p output/readiness-postures output/siren-responses output/preparedness output/combined
 
 for entry in "${typst_files[@]}"; do
   src="${entry%%:*}"
@@ -36,40 +49,56 @@ typst compile --root . typst/combined-cover.typ output/cover.pdf
 echo "  -> output/cover.pdf"
 
 echo ""
-echo "=== Creating concatenated PDF ==="
+echo "=== Creating combined PDFs by type ==="
 
-# Ordered by SOP ID for logical reading
-pdf_order=(
-  output/cover.pdf
-  output/readiness-postures/daytime-posture.pdf
-  output/readiness-postures/nighttime-posture.pdf
-  output/readiness-postures/escalation-readiness.pdf
-  output/readiness-postures/shelter-check.pdf
-  output/readiness-postures/mobility-limited-posture.pdf
-  output/siren-responses/siren-responses.pdf
-  output/siren-responses/siren-responses-with-infant.pdf
+# Readiness Postures combined
+concat_pdfs output/combined/readiness-postures-combined.pdf \
+  output/readiness-postures/daytime-posture.pdf \
+  output/readiness-postures/nighttime-posture.pdf \
+  output/readiness-postures/escalation-readiness.pdf \
+  output/readiness-postures/shelter-check.pdf \
+  output/readiness-postures/mobility-limited-posture.pdf \
   output/readiness-postures/protected-space-flowchart.pdf
-  output/preparedness/emergency-supplies.pdf
-  output/preparedness/family-emergency-plan.pdf
-  output/preparedness/home-preparation.pdf
+echo "  -> output/combined/readiness-postures-combined.pdf"
+
+# Siren Responses combined
+concat_pdfs output/combined/siren-responses-combined.pdf \
+  output/siren-responses/siren-responses.pdf \
+  output/siren-responses/siren-responses-with-infant.pdf
+echo "  -> output/combined/siren-responses-combined.pdf"
+
+# Preparedness combined
+concat_pdfs output/combined/preparedness-combined.pdf \
+  output/preparedness/emergency-supplies.pdf \
+  output/preparedness/family-emergency-plan.pdf \
+  output/preparedness/home-preparation.pdf \
   output/preparedness/emergency-contacts.pdf
-)
+echo "  -> output/combined/preparedness-combined.pdf"
 
-output_combined="output/red-alert-sops-complete.pdf"
+echo ""
+echo "=== Creating master combined PDF ==="
 
-# Use pdfunite (poppler-utils) if available, else ghostscript
-if command -v pdfunite &>/dev/null; then
-  pdfunite "${pdf_order[@]}" "$output_combined"
-elif command -v gs &>/dev/null; then
-  gs -dBATCH -dNOPAUSE -q -sDEVICE=pdfwrite -sOutputFile="$output_combined" "${pdf_order[@]}"
-else
-  echo "ERROR: Need pdfunite (poppler-utils) or gs (ghostscript) to concatenate PDFs"
-  exit 1
-fi
+concat_pdfs output/combined/red-alert-sops-complete.pdf \
+  output/cover.pdf \
+  output/readiness-postures/daytime-posture.pdf \
+  output/readiness-postures/nighttime-posture.pdf \
+  output/readiness-postures/escalation-readiness.pdf \
+  output/readiness-postures/shelter-check.pdf \
+  output/readiness-postures/mobility-limited-posture.pdf \
+  output/siren-responses/siren-responses.pdf \
+  output/siren-responses/siren-responses-with-infant.pdf \
+  output/readiness-postures/protected-space-flowchart.pdf \
+  output/preparedness/emergency-supplies.pdf \
+  output/preparedness/family-emergency-plan.pdf \
+  output/preparedness/home-preparation.pdf \
+  output/preparedness/emergency-contacts.pdf
 
 # Clean up intermediate cover
 rm -f output/cover.pdf
 
-echo "  -> $output_combined"
+# Also keep legacy path
+cp output/combined/red-alert-sops-complete.pdf output/red-alert-sops-complete.pdf
+
+echo "  -> output/combined/red-alert-sops-complete.pdf"
 echo ""
-echo "Done. $(pdfinfo "$output_combined" 2>/dev/null | grep Pages || echo '')"
+echo "Done. $(pdfinfo output/combined/red-alert-sops-complete.pdf 2>/dev/null | grep Pages || echo '')"
