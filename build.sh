@@ -31,6 +31,9 @@ typst_files=(
   typst/family-emergency-plan.typ:output/preparedness/family-emergency-plan.pdf
   typst/home-preparation.typ:output/preparedness/home-preparation.pdf
   typst/emergency-contacts.typ:output/preparedness/emergency-contacts.pdf
+  typst/go-bag.typ:output/preparedness/go-bag.pdf
+  typst/accessibility-equipment.typ:output/preparedness/accessibility-equipment.pdf
+  typst/pet-emergency.typ:output/preparedness/pet-emergency.pdf
 )
 
 # Ensure output directories exist
@@ -72,7 +75,10 @@ concat_pdfs output/combined/preparedness-combined.pdf \
   output/preparedness/emergency-supplies.pdf \
   output/preparedness/family-emergency-plan.pdf \
   output/preparedness/home-preparation.pdf \
-  output/preparedness/emergency-contacts.pdf
+  output/preparedness/emergency-contacts.pdf \
+  output/preparedness/go-bag.pdf \
+  output/preparedness/accessibility-equipment.pdf \
+  output/preparedness/pet-emergency.pdf
 echo "  -> output/combined/preparedness-combined.pdf"
 
 echo ""
@@ -91,7 +97,10 @@ concat_pdfs output/combined/red-alert-sops-complete.pdf \
   output/preparedness/emergency-supplies.pdf \
   output/preparedness/family-emergency-plan.pdf \
   output/preparedness/home-preparation.pdf \
-  output/preparedness/emergency-contacts.pdf
+  output/preparedness/emergency-contacts.pdf \
+  output/preparedness/go-bag.pdf \
+  output/preparedness/accessibility-equipment.pdf \
+  output/preparedness/pet-emergency.pdf
 
 # Clean up intermediate cover
 rm -f output/cover.pdf

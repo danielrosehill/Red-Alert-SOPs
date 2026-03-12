@@ -89,11 +89,14 @@
 #toc-entry("SOP-10", "Family Emergency Plan", "Family coordination, roles, drills, and communication plan")
 #toc-entry("SOP-11", "Home Preparation", "Securing your home, protected space, and escape routes")
 #toc-entry("SOP-12", "Emergency Contacts & Communication", "Essential numbers, alert channels, information discipline")
+#toc-entry("SOP-13", "Go-Bag Packing & Maintenance", "Portable emergency bag — grab and go in seconds")
+#toc-entry("SOP-14", "Accessibility & Disability Equipment", "Equipment for visual, hearing, and mobility impairments")
+#toc-entry("SOP-15", "Pet Emergency Preparedness", "Pet go-bag, evacuation, and service dog procedures")
 
 #v(0.4em)
 #line(length: 100%, stroke: 0.75pt + rgb("#9bb0d0"))
 #v(0.2em)
 #text(size: 8pt, fill: rgb("#888"))[
-  *v1.0* · *Rev:* 12 March 2026 · *Total SOPs:* 12 \
+  *v1.0* · *Rev:* 12 March 2026 · *Total SOPs:* 15 \
   Each SOP is designed to be printed individually. This combined document collects all SOPs for reference.
 ]

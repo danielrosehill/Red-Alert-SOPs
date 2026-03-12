@@ -12,10 +12,10 @@ Standard Operating Procedures for Red Alert (rocket/missile/hostile aerial vehic
 
 | Collection | Contents | PDF |
 |---|---|---|
-| **All SOPs** | Complete collection — 12 SOPs, 17 pages | [red-alert-sops-complete.pdf](output/combined/red-alert-sops-complete.pdf) |
+| **All SOPs** | Complete collection — 15 SOPs, 23 pages | [red-alert-sops-complete.pdf](output/combined/red-alert-sops-complete.pdf) |
 | **Readiness Postures** | SOP-1 through SOP-5 + SOP-8 | [readiness-postures-combined.pdf](output/combined/readiness-postures-combined.pdf) |
 | **Siren Responses** | SOP-6 + SOP-7 | [siren-responses-combined.pdf](output/combined/siren-responses-combined.pdf) |
-| **Preparedness** | SOP-9 through SOP-12 | [preparedness-combined.pdf](output/combined/preparedness-combined.pdf) |
+| **Preparedness** | SOP-9 through SOP-15 | [preparedness-combined.pdf](output/combined/preparedness-combined.pdf) |
 
 ---
 
@@ -43,10 +43,13 @@ Standard Operating Procedures for Red Alert (rocket/missile/hostile aerial vehic
 
 | SOP | Title | Description | PDF |
 |---|---|---|---|
-| SOP-9 | Emergency Supplies Kit | 72-hour supply kit — water, food, power, medical, storage & maintenance | [PDF](output/preparedness/emergency-supplies.pdf) |
+| SOP-9 | Emergency Supplies Kit | 72-hour stationary supply kit — water, food, power, medical, storage & maintenance | [PDF](output/preparedness/emergency-supplies.pdf) |
 | SOP-10 | Family Emergency Plan | Family coordination, roles, drills, meeting places, communication plan | [PDF](output/preparedness/family-emergency-plan.pdf) |
 | SOP-11 | Home Preparation | Securing your home — Mamad inspection, furniture, hazmat, escape routes | [PDF](output/preparedness/home-preparation.pdf) |
 | SOP-12 | Emergency Contacts & Communication | Essential phone numbers, alert channels, information discipline | [PDF](output/preparedness/emergency-contacts.pdf) |
+| SOP-13 | Go-Bag Packing & Maintenance | Portable emergency grab bag — packing list, positioning, maintenance schedule | [PDF](output/preparedness/go-bag.pdf) |
+| SOP-14 | Accessibility & Disability Equipment | Equipment for visual, hearing, and mobility impairments + communication aids | [PDF](output/preparedness/accessibility-equipment.pdf) |
+| SOP-15 | Pet Emergency Preparedness | Pet go-bag, evacuation procedures, shelter policies, service dog requirements | [PDF](output/preparedness/pet-emergency.pdf) |
 
 ---
 
@@ -68,13 +71,17 @@ typst/
   family-emergency-plan.typ        # SOP-10
   home-preparation.typ             # SOP-11
   emergency-contacts.typ           # SOP-12
+  go-bag.typ                       # SOP-13
+  accessibility-equipment.typ      # SOP-14
+  pet-emergency.typ                # SOP-15
 assets/
   image.png                        # ביחד ננצח | עם ישראל חי
 output/
   readiness-postures/              # Individual PDFs — SOP-1 to SOP-5, SOP-8
   siren-responses/                 # Individual PDFs — SOP-6, SOP-7
-  preparedness/                    # Individual PDFs — SOP-9 to SOP-12
+  preparedness/                    # Individual PDFs — SOP-9 to SOP-15
   combined/                        # Combined PDFs by type + master
+  essentials/                      # Key SOPs for quick printing
 data/
   readiness-postures/              # YAML source data
   siren-responses/
@@ -89,7 +96,7 @@ Requires [Typst](https://typst.app/) and `pdfunite` (from `poppler-utils`) or `g
 ./build.sh
 ```
 
-This compiles all 12 individual SOPs, creates combined PDFs by type, and a master combined PDF.
+This compiles all 15 individual SOPs, creates combined PDFs by type, and a master combined PDF.
 
 ## Version
 
