@@ -85,45 +85,51 @@
 
   v(0.4em)
 
+  // Helper: render a single checklist item
+  let render-item(item) = {
+    grid(
+      columns: (auto, 1fr, auto),
+      gutter: 0pt,
+      text(size: 9pt)[#item.item],
+      box(width: 1fr)[
+        #repeat[#text(fill: rgb("#cccccc"), size: 7pt)[ .]]
+      ],
+      text(weight: "bold", size: 9pt)[#item.response],
+    )
+    if "actions" in item and item.actions.len() > 0 {
+      pad(left: 0.5em)[
+        #text(size: 8pt, fill: rgb("#444"))[→ #item.actions.join[ #text(fill: rgb("#999"))[ | ]]]
+      ]
+    }
+    if "note" in item and item.note != "" {
+      pad(left: 0.5em)[
+        #text(size: 8pt, fill: rgb("#666"), style: "italic")[#item.note]
+      ]
+    }
+    v(0.1em)
+  }
+
   // Sections
   for (si, section) in sections.enumerate() {
-    // Section header — Israeli flag blue
-    block(
-      fill: il-blue-light,
-      width: 100%,
-      inset: (x: 0.8em, y: 0.25em),
-      radius: 3pt,
-    )[
-      #text(weight: "bold", size: 10.5pt, fill: il-blue)[#section.name]
+    // Keep section header + first item together to prevent orphaned headers
+    block(breakable: false)[
+      #block(
+        fill: il-blue-light,
+        width: 100%,
+        inset: (x: 0.8em, y: 0.25em),
+        radius: 3pt,
+      )[
+        #text(weight: "bold", size: 10.5pt, fill: il-blue)[#section.name]
+      ]
+      #v(0.15em)
+      #if section.items.len() > 0 {
+        render-item(section.items.first())
+      }
     ]
 
-    v(0.15em)
-
-    // Checklist items — aviation format
-    for item in section.items {
-      // ITEM .............. RESPONSE
-      grid(
-        columns: (auto, 1fr, auto),
-        gutter: 0pt,
-        text(size: 9pt)[#item.item],
-        box(width: 1fr)[
-          #repeat[#text(fill: rgb("#cccccc"), size: 7pt)[ .]]
-        ],
-        text(weight: "bold", size: 9pt)[#item.response],
-      )
-      // Actions beneath with arrow and pipe separators
-      if "actions" in item and item.actions.len() > 0 {
-        pad(left: 0.5em)[
-          #text(size: 8pt, fill: rgb("#444"))[→ #item.actions.join[ #text(fill: rgb("#999"))[ | ]]]
-        ]
-      }
-      // Note beneath in italics if present
-      if "note" in item and item.note != "" {
-        pad(left: 0.5em)[
-          #text(size: 8pt, fill: rgb("#666"), style: "italic")[#item.note]
-        ]
-      }
-      v(0.1em)
+    // Remaining items
+    for item in section.items.slice(1) {
+      render-item(item)
     }
 
     v(0.15em)
