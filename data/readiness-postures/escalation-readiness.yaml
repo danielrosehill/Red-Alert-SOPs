@@ -1,0 +1,106 @@
+title: "Escalation Readiness — Upping Your Posture"
+subtitle: "Red Alert SOP — When the Security Situation Deteriorates"
+description: >
+  Checklist for when geopolitical escalation is detected or expected.
+  Based on HFC recommendation to prepare 72 hours of supplies.
+  Complete this checklist when tensions rise, BEFORE sirens start.
+
+sections:
+  - name: "Water & Food (72 Hours Minimum)"
+    items:
+      - id: E01
+        item: "Water — 3 litres per person per day × 3 days"
+        detail: "Sealed bottles, stored in protected space or by go bag. Replace every 3 months."
+      - id: E02
+        item: "Water for infants — extra for formula preparation"
+        detail: "Bottled water suitable for babies; enough for 72 hours"
+      - id: E03
+        item: "Non-perishable food for 72 hours"
+        detail: "Canned goods, crackers, dried fruit, energy bars, peanut butter — no cooking required"
+      - id: E04
+        item: "Baby food / formula / snacks for 72 hours"
+        detail: "Pre-measured formula portions; pouches; age-appropriate snacks"
+      - id: E05
+        item: "Pet food for 72 hours (if applicable)"
+        detail: ""
+      - id: E06
+        item: "Manual can opener"
+        detail: "Do not rely on electric; pack with food supplies"
+      - id: E07
+        item: "Disposable plates, cups, cutlery"
+        detail: ""
+
+  - name: "Power & Communications"
+    items:
+      - id: E08
+        item: "Power banks — fully charged"
+        detail: "Enough to charge all phones for 72 hours"
+      - id: E09
+        item: "Battery-powered or hand-crank radio"
+        detail: "For updates if internet / cell goes down; test batteries"
+      - id: E10
+        item: "Spare batteries (AA, AAA, torch batteries)"
+        detail: "For torch, radio, and any medical devices"
+      - id: E11
+        item: "Car — at least half a tank of fuel"
+        detail: "Fill up before stations get crowded; keep topped up during escalation"
+      - id: E12
+        item: "Cash on hand"
+        detail: "ATMs and card readers may go offline; enough for several days of basics"
+
+  - name: "Medical & Documents"
+    items:
+      - id: E13
+        item: "Medications — 72-hour supply in go bag or protected space"
+        detail: "Prescription meds, inhalers, insulin, EpiPens — plus printed prescriptions"
+      - id: E14
+        item: "First aid kit — stocked and checked"
+        detail: "Bandages, antiseptic, painkillers, any personal medical supplies"
+      - id: E15
+        item: "Copies of essential documents"
+        detail: "ID, passport, driver's licence, insurance, medical records — in sealed plastic bag"
+      - id: E16
+        item: "Infant documents if applicable"
+        detail: "Vaccination booklet (Tofes Yarok), health fund card"
+
+  - name: "Household & Comfort"
+    items:
+      - id: E17
+        item: "Torches — checked and batteries fresh"
+        detail: "One per room plus one in go bag"
+      - id: E18
+        item: "Blankets or sleeping bags"
+        detail: "For sheltering in protected space; nights can be cold"
+      - id: E19
+        item: "Change of clothes for each family member"
+        detail: "In go bag or protected space; include warm layer"
+      - id: E20
+        item: "Hygiene basics"
+        detail: "Toilet paper, wet wipes, nappies, hand sanitiser, garbage bags"
+      - id: E21
+        item: "Activities for children"
+        detail: "Colouring books, games, stationery — waiting in a shelter is long for kids"
+      - id: E22
+        item: "Fire extinguisher and smoke detector"
+        detail: "Check that they are functional"
+      - id: E23
+        item: "Gas supply checked"
+        detail: "Private homes: spare tank full. Shared buildings: storage tank more than half full"
+
+  - name: "Readiness Actions"
+    items:
+      - id: E24
+        item: "All household members briefed on the plan"
+        detail: "Everyone knows where the shelters are, what to grab, and their role"
+      - id: E25
+        item: "Shelter check completed (see Shelter Check checklist)"
+        detail: "Nearest shelters verified, routes walked, access confirmed"
+      - id: E26
+        item: "Go bag fully packed and by the door"
+        detail: "Ready for both sheltering-in-place and evacuation scenarios"
+      - id: E27
+        item: "Emergency contacts list prepared and shared"
+        detail: "Family, neighbours, doctor, insurance — printed copy in go bag"
+      - id: E28
+        item: "Daytime and nighttime postures activated"
+        detail: "Switch to full readiness mode — see posture checklists"

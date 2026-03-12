@@ -38,5 +38,5 @@
       ),
     ),
   ),
-  footer-note: "Source: Based on Israel Home Front Command (Pikud HaOref) guidelines. This checklist is for buildings WITHOUT a Mamad/Mamak. Verify shelter locations and times for your specific area at oref.org.il.",
+  footer-note: "DISCLAIMER: This is NOT an official government resource. Use at your own risk. Based on Home Front Command (Pikud HaOref) guidelines. For official guidance visit oref.org.il.",
 )

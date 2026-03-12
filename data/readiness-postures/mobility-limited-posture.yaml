@@ -1,0 +1,57 @@
+title: "Readiness Posture — Elderly / Mobility Limited"
+subtitle: "Red Alert SOP — No Mamad/Mamak"
+description: >
+  Checklist for individuals with mobility limitations or families caring for
+  elderly or disabled members in buildings without a Mamad/Mamak.
+
+sections:
+  - name: "Protected Space Setup"
+    items:
+      - id: M01
+        item: "Protected space pre-selected and practised"
+        detail: "Identified from every room in the house; practised reaching it"
+      - id: M02
+        item: "Bed or sofa repositioned against inner wall (if needed)"
+        detail: "Below window line, not facing door — for those who cannot move quickly"
+      - id: M03
+        item: "No shelves or heavy objects above the bed/sofa"
+        detail: ""
+      - id: M04
+        item: "Routes to protected space cleared of obstacles"
+        detail: "Rugs, plant pots, chairs, cables — anything that could cause a trip or block a wheelchair"
+      - id: M05
+        item: "Grab rails or support available along the route"
+        detail: "Wall-mounted rails, furniture positioned for support, walker accessible"
+
+  - name: "Equipment & Supplies"
+    items:
+      - id: M06
+        item: "Wheelchair / walker / mobility aid within reach"
+        detail: "Charged if electric; not folded away in a closet"
+      - id: M07
+        item: "Phone within arm's reach at all times"
+        detail: "Charged, volume ON, Red Alert app active"
+      - id: M08
+        item: "Medications in protected space or go bag"
+        detail: "Especially time-critical medications (insulin, inhalers, etc.)"
+      - id: M09
+        item: "Chair positioned in stairwell (if stairwell is the protected space)"
+        detail: "For sitting during the 10-minute wait"
+      - id: M10
+        item: "Torch within reach — not just in go bag"
+        detail: "Especially important if mobility is limited in the dark"
+
+  - name: "Support Network"
+    items:
+      - id: M11
+        item: "Buddy system arranged with a neighbour"
+        detail: "Someone who will check on you or help you move when the siren sounds"
+      - id: M12
+        item: "Neighbour has a key or knows how to reach you"
+        detail: ""
+      - id: M13
+        item: "Emergency contacts saved and easily accessible"
+        detail: "Family, neighbour buddy, building committee"
+      - id: M14
+        item: "Family members know the plan"
+        detail: "Who helps whom, who grabs what, designated roles during a siren"

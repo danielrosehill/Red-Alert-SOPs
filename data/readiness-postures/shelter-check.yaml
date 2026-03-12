@@ -1,0 +1,70 @@
+title: "Shelter Check — Finding and Verifying Your Nearest Shelters"
+subtitle: "Red Alert SOP — Do This Before You Need It"
+description: >
+  Checklist for locating, verifying, and familiarising yourself with your
+  nearest public and building shelters. Complete this checklist BEFORE an
+  emergency — do not try to find shelters for the first time during a siren.
+
+sections:
+  - name: "Identify Shelters"
+    items:
+      - id: S01
+        item: "Nearest public shelter — location identified"
+        detail: "Check municipality website, building committee, or neighbours"
+      - id: S02
+        item: "Second nearest shelter — location identified"
+        detail: "Backup in case primary is locked or full"
+      - id: S03
+        item: "Third nearest shelter — location identified"
+        detail: "A further backup — may be a public building with a Mamam"
+      - id: S04
+        item: "Building stairwell assessed as fallback"
+        detail: "Is it windowless? Which floor is safest? Is it clear of obstacles?"
+
+  - name: "Verify Access"
+    items:
+      - id: S05
+        item: "Primary shelter — physically visited and confirmed open/accessible"
+        detail: "Some shelters are locked; verify you can get in or know who has the key"
+      - id: S06
+        item: "Secondary shelter — physically visited and confirmed accessible"
+        detail: ""
+      - id: S07
+        item: "Opening hours / access restrictions known"
+        detail: "Some public shelters are locked at night or require a code"
+      - id: S08
+        item: "Key holder or access code obtained (if applicable)"
+        detail: "Building committee, municipality, or designated keyholder"
+      - id: S09
+        item: "Shelter is maintained and usable"
+        detail: "Not used as storage, flooded, or blocked — report issues to municipality"
+
+  - name: "Know the Route"
+    items:
+      - id: S10
+        item: "Route to primary shelter — walked and timed"
+        detail: "Can you make it within your area's time-to-shelter?"
+      - id: S11
+        item: "Route to secondary shelter — walked and timed"
+        detail: ""
+      - id: S12
+        item: "Route walked at night"
+        detail: "Is it lit? Can you navigate it in the dark with a torch?"
+      - id: S13
+        item: "Route is step-free or wheelchair accessible (if needed)"
+        detail: "Kerbs, stairs, uneven ground — can everyone in your household make it?"
+      - id: S14
+        item: "Obstacles identified and noted"
+        detail: "Locked gates, construction, narrow passages, stray animals"
+
+  - name: "Time to Shelter"
+    items:
+      - id: S15
+        item: "Time to shelter for your area — looked up and memorised"
+        detail: "Check HFC Alerts tab at oref.org.il — enter your locality name"
+      - id: S16
+        item: "Realistic time test completed"
+        detail: "Timed yourself (and family) going from home to shelter at a fast walk, not a sprint"
+      - id: S17
+        item: "If shelter is NOT reachable in time — fallback plan set"
+        detail: "Inner stairwell or inner room identified and prepared"

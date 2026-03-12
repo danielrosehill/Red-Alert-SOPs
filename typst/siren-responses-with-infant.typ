@@ -159,4 +159,4 @@
 #v(1fr)
 #line(length: 100%, stroke: 0.5pt + rgb("#ccc"))
 #v(0.15em)
-#text(size: 6.5pt, fill: rgb("#888"))[Based on Home Front Command guidelines. Always wait 10 min after the last siren. Verify time-to-shelter for your area at oref.org.il.]
+#text(size: 6.5pt, fill: rgb("#888"))[*DISCLAIMER:* This is NOT an official government resource. Use at your own risk. Based on Home Front Command (Pikud HaOref) guidelines. For official guidance visit oref.org.il. Always wait 10 min after the last siren.]

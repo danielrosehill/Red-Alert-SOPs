@@ -132,4 +132,4 @@
 #v(1fr)
 #line(length: 100%, stroke: 0.5pt + rgb("#cccccc"))
 #v(0.2em)
-#text(size: 7pt, fill: rgb("#888888"))[Source: Israel Home Front Command (Pikud HaOref) — oref.org.il. Verify time to shelter for your area. Wait 10 minutes after alert.]
+#text(size: 6.5pt, fill: rgb("#888888"))[*DISCLAIMER:* This is NOT an official government resource. Use at your own risk. Based on Home Front Command (Pikud HaOref) guidelines. For official guidance visit oref.org.il. Wait 10 minutes after alert.]
