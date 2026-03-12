@@ -1,0 +1,30 @@
+title: "Siren Response — On a Bus"
+id: SR04
+scenario: "You are a passenger on a bus or public transit when the siren sounds"
+time_critical: true
+
+steps:
+  - step: 1
+    action: "The driver should stop the bus and open the doors"
+    detail: "If the driver does not stop, call out clearly."
+  - step: 2
+    action: "Exit the bus"
+    detail: "Leave quickly but without pushing. Help elderly and disabled passengers."
+  - step: 3
+    action: "Enter a nearby building or shelter if reachable within time"
+    detail: "A building's stairwell or any solid structure is better than staying near the bus."
+  - step: 4
+    action: "If no building is reachable — move away from the bus"
+    detail: "A bus is a large target. Get distance from it."
+  - step: 5
+    action: "Lie on the ground and protect your head"
+    detail: "Face down, hands over your head."
+  - step: 6
+    action: "Wait 10 minutes"
+    detail: "Do not return to the bus until 10 minutes have passed."
+
+notes:
+  - "Do NOT stay on the bus — it provides no protection"
+  - "Intercity buses: the driver is trained to stop and open doors"
+  - "Light rail / tram: exit at the nearest stop or through emergency exits"
+  - "Take your bag and phone with you if immediately accessible — do not delay to search for them"

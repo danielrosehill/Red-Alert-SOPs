@@ -1,0 +1,27 @@
+title: "Siren Response — Mobility Limitations"
+id: SR10
+scenario: "You use a wheelchair, walker, or have difficulty moving quickly"
+time_critical: true
+
+steps:
+  - step: 1
+    action: "Move to your pre-designated protected space"
+    detail: "You should have already identified and practiced reaching this space from every room."
+  - step: 2
+    action: "If in a wheelchair — position against an inner wall"
+    detail: "Lock the wheels. Below window line, not facing a door."
+  - step: 3
+    action: "If bedridden — your bed should already be in the protected space"
+    detail: "If not, get as low as possible and shield your head."
+  - step: 4
+    action: "Use walls, railings, and mobility aids for support"
+    detail: "Move quickly but carefully — a fall will cost more time than moving steadily."
+  - step: 5
+    action: "Wait 10 minutes"
+    detail: "Call for assistance if needed."
+
+notes:
+  - "Pre-position: bed or sofa should already be against an inner wall if mobility is limited"
+  - "Routes must be pre-cleared of rugs, plant pots, and obstacles"
+  - "If you cannot reach the protected space alone, arrange a buddy system with a neighbour"
+  - "Keep a phone within reach at all times to call for help"

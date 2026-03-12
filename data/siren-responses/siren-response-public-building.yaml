@@ -1,0 +1,30 @@
+title: "Siren Response — In a Public Building"
+id: SR06
+scenario: "You are in a mall, office, school, hospital, or other public building when the siren sounds"
+time_critical: true
+
+steps:
+  - step: 1
+    action: "Go to the designated protected space"
+    detail: "Most public buildings have a Mamam (institutional protected space) or shelter. Follow signs or staff instructions."
+  - step: 2
+    action: "If no designated space is visible — go to the inner stairwell"
+    detail: "Centre of the stairwell, not top or ground floor."
+  - step: 3
+    action: "If no stairwell — innermost corridor or room"
+    detail: "Away from windows, glass, and exterior walls. Sit below window line."
+  - step: 4
+    action: "Do NOT use elevators"
+    detail: "Take the stairs. An elevator may stop between floors during a strike."
+  - step: 5
+    action: "Do NOT go outside"
+    detail: "A solid building is better than open ground. Stay inside."
+  - step: 6
+    action: "Wait 10 minutes"
+    detail: "Do not leave until 10 minutes have passed since the last siren."
+
+notes:
+  - "Malls, schools, and hospitals are required to have designated shelters — look for signs"
+  - "Follow instructions from security staff"
+  - "Stay away from large glass panels, atriums, and skylights"
+  - "If in a bathroom/kitchen, move to a corridor or stairwell"

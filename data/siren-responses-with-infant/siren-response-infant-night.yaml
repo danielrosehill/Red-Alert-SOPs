@@ -1,0 +1,28 @@
+title: "Siren Response — Night, Baby Sleeping, No Mamad"
+id: SRI06
+scenario: "Siren sounds at night while baby is asleep, no Mamad in building"
+time_critical: true
+
+steps:
+  - step: 1
+    action: "Go straight to the baby's room and pick them up"
+    detail: "Do not get dressed first. Grab the baby, then shoes/keys if within arm's reach."
+  - step: 2
+    action: "Hold baby against your chest and move"
+    detail: "If shelter is reachable — go. Take keys only if right by the door."
+  - step: 3
+    action: "If shelter is NOT reachable — stairwell or inner room"
+    detail: "Centre of stairwell or innermost room. Sit down, hold baby close."
+  - step: 4
+    action: "Comfort the baby"
+    detail: "They will likely wake and cry. Skin contact, quiet voice, rocking all help."
+  - step: 5
+    action: "Wait 10 minutes"
+    detail: "Do not leave to go back for supplies."
+
+notes:
+  - "If both parents are home: one grabs the baby, one grabs go bag + keys + torch"
+  - "Pre-position a blanket or muslin wrap to grab with the baby — nights can be cold in shelters"
+  - "Keep a torch by YOUR bed, not just by the baby — you need to navigate first"
+  - "If baby sleeps in your room, this is faster — consider room-sharing during escalations"
+  - "Have nappies, wipes, and a bottle/snack pre-packed in the go bag"

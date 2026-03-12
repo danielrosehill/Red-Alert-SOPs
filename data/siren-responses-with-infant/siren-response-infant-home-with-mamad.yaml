@@ -1,0 +1,26 @@
+title: "Siren Response — At Home WITH Mamad, With Infant"
+id: SRI02
+scenario: "You are at home with a baby (0–18 months), Mamad available"
+time_critical: true
+
+steps:
+  - step: 1
+    action: "Pick up the baby FIRST"
+    detail: "Grab them from wherever they are — crib, play mat, bouncer. Do not waste time on anything else."
+  - step: 2
+    action: "Move to the Mamad"
+    detail: "Hold baby firmly against your chest."
+  - step: 3
+    action: "Close and lock the blast door"
+    detail: "Turn handle 90 degrees. If both parents are present, one holds the baby while the other seals the room."
+  - step: 4
+    action: "Sit against the inner wall with the baby"
+    detail: "Below window line, not facing the door. Hold baby close."
+  - step: 5
+    action: "Wait 10 minutes"
+    detail: "Comfort the baby. Breastfeed or offer a pacifier if it helps them stay calm."
+
+notes:
+  - "Keep a small stash of baby supplies in the Mamad: nappies, wipes, pacifier, a bottle or snack"
+  - "If baby sleeps in the Mamad (common during escalations), keep the crib against the inner wall"
+  - "The Mamad should already have the steel and glass windows closed during an emergency period"

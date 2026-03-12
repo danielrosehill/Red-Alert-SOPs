@@ -1,0 +1,27 @@
+title: "Siren Response — In a Public Building, With Infant"
+id: SRI07
+scenario: "You are in a mall, clinic, office, or other public building with a baby when the siren sounds"
+time_critical: true
+
+steps:
+  - step: 1
+    action: "Pick up the baby — take them OUT of the stroller"
+    detail: "Hold against your chest. Do not push the stroller to the shelter."
+  - step: 2
+    action: "Follow signs or staff to the designated shelter"
+    detail: "Most public buildings have a Mamam or shelter. Follow the crowd if unsure."
+  - step: 3
+    action: "If no shelter is obvious — go to the stairwell"
+    detail: "Centre of stairwell, not top or ground floor. Do NOT use the elevator."
+  - step: 4
+    action: "Sit against the inner wall, shield baby"
+    detail: "Below window line, away from glass panels and atriums."
+  - step: 5
+    action: "Wait 10 minutes"
+    detail: "Comfort baby. Accept help from others around you."
+
+notes:
+  - "At a clinic (Tipat Halav, doctor): staff should guide you to the shelter — ask immediately"
+  - "In a mall: follow emergency exit signs toward the shelter, NOT toward the exit doors"
+  - "Leave the stroller behind"
+  - "If you're breastfeeding when the siren sounds, you can carry the baby while still feeding if needed"

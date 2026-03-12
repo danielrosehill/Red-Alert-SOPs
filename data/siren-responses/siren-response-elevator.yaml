@@ -1,0 +1,26 @@
+title: "Siren Response — In an Elevator"
+id: SR07
+scenario: "You are inside an elevator when the siren sounds"
+time_critical: true
+
+steps:
+  - step: 1
+    action: "Press the nearest floor button"
+    detail: "Get out at the next available floor. Do not press the emergency stop."
+  - step: 2
+    action: "Exit the elevator immediately"
+    detail: "As soon as the doors open, get out."
+  - step: 3
+    action: "Go to the nearest protected space"
+    detail: "Stairwell centre, Mamad, shelter, or inner room — whichever is closest."
+  - step: 4
+    action: "If the elevator is stuck — sit on the floor"
+    detail: "Sit in the centre of the elevator, away from the doors. Protect your head."
+  - step: 5
+    action: "Wait 10 minutes"
+    detail: "If stuck, wait for rescue. Use the intercom or emergency button."
+
+notes:
+  - "NEVER enter an elevator during an alert"
+  - "An elevator can lose power or stop between floors during a strike"
+  - "If doors open on a floor, exit — do not ride to your intended floor"

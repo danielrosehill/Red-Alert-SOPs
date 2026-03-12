@@ -1,0 +1,30 @@
+title: "Siren Response — Driving, With Infant in Car Seat"
+id: SRI04
+scenario: "You are driving with a baby (0–18 months) in a car seat when the siren sounds"
+time_critical: true
+
+steps:
+  - step: 1
+    action: "Pull over safely and stop"
+    detail: "Hard shoulder, side of road. Hazard lights on. Turn off engine."
+  - step: 2
+    action: "Unbuckle the baby from the car seat"
+    detail: "Do not try to detach the whole car seat — it takes too long. Unbuckle the harness and lift the baby out."
+  - step: 3
+    action: "Exit the vehicle with the baby"
+    detail: "Hold baby firmly against your chest."
+  - step: 4
+    action: "Enter a nearby building if reachable in time"
+    detail: "A building's stairwell or any solid structure."
+  - step: 5
+    action: "If no building — move away from the car and lie on the ground"
+    detail: "Place baby under you, shield them with your body. Protect heads."
+  - step: 6
+    action: "Wait 10 minutes"
+    detail: "Do not return to the car until time has passed."
+
+notes:
+  - "The car provides NO protection — you must get out"
+  - "Practise unbuckling the car seat harness quickly — seconds matter"
+  - "If two adults in the car: one grabs the baby, the other grabs the nappy bag only if immediate"
+  - "Never leave the baby in the car seat in the car"

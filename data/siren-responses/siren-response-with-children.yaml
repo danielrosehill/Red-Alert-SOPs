@@ -1,0 +1,27 @@
+title: "Siren Response — With Young Children"
+id: SR09
+scenario: "You are with babies, toddlers, or young children when the siren sounds"
+time_critical: true
+
+steps:
+  - step: 1
+    action: "Pick up / gather the children immediately"
+    detail: "Carry babies and toddlers. Hold young children's hands firmly. Stay calm — they will take cues from you."
+  - step: 2
+    action: "Move to the protected space"
+    detail: "Follow the standard priority: Mamad > Shelter > Stairwell > Inner room."
+  - step: 3
+    action: "Place children against the inner wall, below window line"
+    detail: "Shield them with your body if needed. Keep them away from doors and windows."
+  - step: 4
+    action: "Keep children calm"
+    detail: "Speak in a steady voice. Explain simply: 'We're going to our safe room and we'll wait here.'"
+  - step: 5
+    action: "Wait 10 minutes"
+    detail: "Do not let children leave or open doors until time has passed."
+
+notes:
+  - "Practice the route with children in advance — make it a drill, not a surprise"
+  - "Keep a comfort item (stuffed toy, blanket) in the Mamad or go bag"
+  - "If in a nursery or school, follow the institution's emergency procedure"
+  - "Babies in cribs: move the crib to the Mamad if possible, otherwise carry the baby"

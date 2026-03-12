@@ -1,0 +1,23 @@
+title: "Siren Response — In a Prefab / Caravan / Wooden Structure"
+id: SR08
+scenario: "You are in a caravan, prefab building, or wooden structure when the siren sounds"
+time_critical: true
+
+steps:
+  - step: 1
+    action: "LEAVE the structure immediately"
+    detail: "Prefab, caravan, and wooden structures provide NO protection. Get out NOW."
+  - step: 2
+    action: "Enter the nearest solid building or shelter"
+    detail: "Must be reachable within time to shelter."
+  - step: 3
+    action: "If no solid building is reachable — lie on the ground"
+    detail: "Move away from the prefab structure. Lie face down, protect your head with your hands."
+  - step: 4
+    action: "Wait 10 minutes"
+    detail: "Do not return to the structure until 10 minutes have passed."
+
+notes:
+  - "Caravans and prefab structures can become projectiles in a blast"
+  - "This applies to construction site cabins, temporary classrooms, and mobile homes"
+  - "If you live in a prefab community, know your nearest solid shelter BEFORE an emergency"

@@ -1,0 +1,30 @@
+title: "Siren Response — While Driving"
+id: SR03
+scenario: "You are driving a vehicle when the siren sounds"
+time_critical: true
+
+steps:
+  - step: 1
+    action: "Pull over to the side of the road"
+    detail: "Slow down, signal, and stop safely. Do not stop in the middle of the road or on a bridge."
+  - step: 2
+    action: "Turn off the engine"
+    detail: ""
+  - step: 3
+    action: "Exit the vehicle"
+    detail: "You and all passengers must get OUT of the car. A vehicle offers no protection."
+  - step: 4
+    action: "Enter a nearby building or shelter if reachable within time"
+    detail: "A building's stairwell or any solid structure is better than open ground."
+  - step: 5
+    action: "If no building is reachable — lie on the ground"
+    detail: "Move away from the vehicle. Lie face down, protect your head with your hands."
+  - step: 6
+    action: "Wait 10 minutes"
+    detail: "Do not return to the vehicle until 10 minutes have passed since the last siren."
+
+notes:
+  - "Do NOT stay in the vehicle — it provides no protection against shrapnel or blast"
+  - "Do NOT stop in a tunnel unless instructed to do so by authorities"
+  - "If on a highway, pull onto the hard shoulder"
+  - "Keep hazard lights on so other drivers can see you"

@@ -1,0 +1,27 @@
+title: "Siren Response — Outside / On Foot"
+id: SR05
+scenario: "You are walking, running, or otherwise outside when the siren sounds"
+time_critical: true
+
+steps:
+  - step: 1
+    action: "Enter the nearest building immediately"
+    detail: "Any solid building — apartment block, office, shop, mall. Do not be choosy."
+  - step: 2
+    action: "Go to the building's stairwell or an inner room"
+    detail: "Stairwell centre (not top or ground floor) is best. Otherwise, innermost room with maximum walls."
+  - step: 3
+    action: "If a public shelter is closer and you can reach it in time — go there"
+    detail: "Know where public shelters are along your regular routes."
+  - step: 4
+    action: "If no building or shelter is reachable — lie on the ground"
+    detail: "Face down, protect your head with your hands. Move away from vehicles, glass storefronts, and trees."
+  - step: 5
+    action: "Wait 10 minutes"
+    detail: "Do not get up until 10 minutes have passed since the last siren."
+
+notes:
+  - "Do NOT shelter under trees, near vehicles, or next to glass storefronts"
+  - "Do NOT return to an open area to retrieve belongings"
+  - "A solid wall (even outside) is better than nothing — crouch against it on the side away from the threat direction"
+  - "If near a beach or open field, you are very exposed — run to the nearest structure"

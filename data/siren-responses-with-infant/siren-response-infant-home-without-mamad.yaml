@@ -1,0 +1,30 @@
+title: "Siren Response — At Home WITHOUT Mamad, With Infant"
+id: SRI01
+scenario: "You are at home with a baby (0–18 months), no Mamad/Mamak in building"
+time_critical: true
+
+steps:
+  - step: 1
+    action: "Pick up the baby FIRST"
+    detail: "Scoop them up immediately — do not put them down until you are in the protected space. Support the head if under 6 months."
+  - step: 2
+    action: "Grab the go bag only if it is RIGHT by the door"
+    detail: "Do not go back for it. The baby and getting to shelter are the only priorities."
+  - step: 3
+    action: "If shelter is reachable in time — GO"
+    detail: "Hold the baby firmly against your chest with one arm. Use the other for doors and rails. Move fast but do not run on stairs."
+  - step: 4
+    action: "If shelter is NOT reachable — inner stairwell"
+    detail: "Centre of stairwell, not top or ground floor. Sit down, hold baby close to your chest, shield with your body."
+  - step: 5
+    action: "If no stairwell — innermost room"
+    detail: "Sit on the floor against an inner wall, below window line. Hold baby against your chest, curl over them."
+  - step: 6
+    action: "Wait 10 minutes"
+    detail: "The baby may cry — this is OK. Do not leave to get supplies until the wait is over."
+
+notes:
+  - "Pre-position a baby carrier (wrap or structured) by the door for hands-free evacuation"
+  - "If baby is sleeping in a crib, pick them up — do not waste time trying to move the crib"
+  - "If both parents are home, one takes the baby, one takes the go bag and keys"
+  - "Practise the pickup-and-go at least once so it becomes muscle memory"

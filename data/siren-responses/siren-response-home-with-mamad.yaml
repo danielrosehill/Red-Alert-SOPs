@@ -1,0 +1,28 @@
+title: "Siren Response — At Home WITH Mamad"
+id: SR01
+scenario: "You are at home and your building has a Mamad (residential protected room)"
+time_critical: true
+
+steps:
+  - step: 1
+    action: "Move immediately to the Mamad"
+    detail: "Do not stop to collect belongings. Bring your phone."
+  - step: 2
+    action: "Close the blast door tightly"
+    detail: "Turn the handle 90 degrees to lock it."
+  - step: 3
+    action: "Verify windows are sealed"
+    detail: "External steel window AND internal glass window must be closed. If double-wing sliding glass, wings should already be removed (pre-positioned outside the room)."
+  - step: 4
+    action: "Sit against an inner wall, below window line"
+    detail: "Do not sit or stand facing the door."
+  - step: 5
+    action: "Wait 10 minutes"
+    detail: "Do not leave until 10 minutes have passed since the last siren."
+  - step: 6
+    action: "Listen for further instructions"
+    detail: "Check Red Alert app and news for all-clear or additional alerts."
+
+notes:
+  - "If you have time, bring children, elderly, and pets into the Mamad"
+  - "Keep the Mamad steel and glass windows closed until the end of the emergency situation — not just this alert"

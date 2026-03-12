@@ -1,0 +1,29 @@
+title: "Siren Response — On a Bus, With Infant"
+id: SRI05
+scenario: "You are on a bus with a baby (0–18 months) when the siren sounds"
+time_critical: true
+
+steps:
+  - step: 1
+    action: "Hold the baby securely against your chest"
+    detail: "If in a carrier, tighten straps. If in stroller, take baby OUT of the stroller."
+  - step: 2
+    action: "Exit the bus when doors open"
+    detail: "Leave the stroller on the bus. Move quickly but do not push."
+  - step: 3
+    action: "Enter the nearest building"
+    detail: "Any solid structure — stairwell, shop, building lobby leading to an inner space."
+  - step: 4
+    action: "If no building is reachable — move away from the bus"
+    detail: "A bus is a large target. Get distance."
+  - step: 5
+    action: "Lie on the ground, shield the baby with your body"
+    detail: "Baby underneath you, face down. Protect both heads."
+  - step: 6
+    action: "Wait 10 minutes"
+    detail: "Do not return to the bus."
+
+notes:
+  - "Leave the stroller — do not waste time folding it or pulling it off the bus"
+  - "If the bus driver doesn't stop, shout clearly"
+  - "Ask other passengers for help if you are struggling with the baby and bags"

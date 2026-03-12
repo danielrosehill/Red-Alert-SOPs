@@ -1,0 +1,27 @@
+title: "Siren Response — Outside on Foot, With Infant"
+id: SRI03
+scenario: "You are walking or at a park with a baby (0–18 months) when the siren sounds"
+time_critical: true
+
+steps:
+  - step: 1
+    action: "Take the baby OUT of the stroller immediately"
+    detail: "Hold them against your chest. A stroller slows you down and offers no protection."
+  - step: 2
+    action: "Enter the nearest building"
+    detail: "Any solid structure — apartment, shop, office. Do not be choosy."
+  - step: 3
+    action: "Go to the stairwell or inner space"
+    detail: "Centre of stairwell or innermost room. Sit on the floor, shield baby with your body."
+  - step: 4
+    action: "If no building is reachable — get low"
+    detail: "Lie on the ground face down. Place the baby under you, shielding them with your body. Protect both your heads."
+  - step: 5
+    action: "Wait 10 minutes"
+    detail: "Do not go back for the stroller or bag."
+
+notes:
+  - "LEAVE the stroller behind — it is not worth seconds of delay"
+  - "If wearing a baby carrier, you are already hands-free — run to shelter"
+  - "A structured carrier (Ergobaby, etc.) is far better than a stroller for siren readiness when walking outside"
+  - "Know shelter locations along your regular walking routes"

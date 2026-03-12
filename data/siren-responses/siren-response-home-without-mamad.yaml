@@ -1,0 +1,29 @@
+title: "Siren Response — At Home WITHOUT Mamad"
+id: SR02
+scenario: "You are at home and your building has NO Mamad, Mamak, or Mamam"
+time_critical: true
+
+steps:
+  - step: 1
+    action: "Decide: Can you reach the nearest shelter in time?"
+    detail: "You must know your area's time-to-shelter. If yes, grab keys and go bag and GO. If no, proceed to step 2."
+  - step: 2
+    action: "If shelter is reachable — move NOW"
+    detail: "Take keys, phone, go bag (if by the door). Lock the door behind you. Sprint to the shelter."
+  - step: 3
+    action: "If shelter is NOT reachable — go to inner stairwell"
+    detail: "Stay in the centre of the stairwell. Not on the top floor, not on the entrance floor. In a 3+ floor building, stay where at least 2 floors are above you."
+  - step: 4
+    action: "If no inner stairwell — go to innermost room"
+    detail: "Maximum walls, minimum windows. Sit against an inner wall, below the window line, not facing any door. Close all doors and windows."
+  - step: 5
+    action: "Wait 10 minutes"
+    detail: "Do not leave until 10 minutes have passed since the last siren."
+  - step: 6
+    action: "Listen for further instructions"
+    detail: "Check Red Alert app and news for all-clear or additional alerts."
+
+notes:
+  - "NEVER use kitchen, bathroom, or toilet as a protected space"
+  - "NEVER shelter in the building entrance lobby"
+  - "If you chose the stairwell, stay ON the staircase, not in the floor hallway"
