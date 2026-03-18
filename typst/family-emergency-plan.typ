@@ -49,7 +49,7 @@
     (
       name: "Order of Actions (Memorise)",
       items: (
-        (item: [*1. NOTIFY* — alert rescue services or an adult], response: "MEMORISED", note: "As early as possible"),
+        (item: [*1. NOTIFY* — call rescue services (or alert an adult if you are a child)], response: "MEMORISED", note: "As early as possible"),
         (item: [*2. SHUT OFF* — gas and electricity], response: "MEMORISED", note: "Prevent fire spread and ignition"),
         (item: [*3. DISTANCE* — move to protected space], response: "MEMORISED", note: "Based on the type of emergency"),
         (item: [*4. CLOSE* — add barriers between you and the threat], response: "MEMORISED", note: "Close windows and doors"),

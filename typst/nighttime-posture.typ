@@ -21,9 +21,9 @@
     (
       name: "Go Bag & Exit Route",
       items: (
-        (item: [*Baby carrier* by front door], response: "CHECKED", note: "Wrap or structured carrier — you may need both hands free"),
+        (item: [*Baby carrier* by front door (if applicable)], response: "CHECKED", note: "Wrap or structured carrier — you may need both hands free"),
         (item: [*Go bag* packed and positioned by door], response: "CHECKED", note: ""),
-        (item: [*Infant supplies* in go bag], response: "CHECKED", actions: ("pacifier", "bottle/formula", "nappies", "wipes", "muslin/blanket"), note: ""),
+        (item: [*Infant supplies* in go bag (if applicable)], response: "CHECKED", actions: ("pacifier", "bottle/formula", "nappies", "wipes", "muslin/blanket"), note: ""),
         (item: [*Medications* in go bag], response: "CHECKED", note: ""),
         (item: [*Power bank* on charge], response: "CHECKED", note: "Near go bag or by front door"),
         (item: [Hallway and *exit route* clear], response: "VERIFIED", note: "Can navigate in the dark without tripping"),

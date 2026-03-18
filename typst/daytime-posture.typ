@@ -20,7 +20,7 @@
     (
       name: "Go Bag & Exit Route",
       items: (
-        (item: [*Baby carrier* by front door], response: "CHECKED", note: "Wrap or structured carrier — hands-free evacuation is far faster than a stroller"),
+        (item: [*Baby carrier* by front door (if applicable)], response: "CHECKED", note: "Wrap or structured carrier — hands-free evacuation is far faster than a stroller"),
         (item: [*Go bag* packed and positioned by door], response: "CHECKED", note: ""),
         (item: [Daily *bag check* completed], response: "CHECKED", actions: ("medications", "charged torch", "water bottle", "phone charger", "copy of ID"), note: ""),
         (item: [Hallway and *exit route* clear], response: "VERIFIED", note: "No furniture, shoes, or items blocking path to front door"),

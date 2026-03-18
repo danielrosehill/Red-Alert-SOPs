@@ -1,7 +1,24 @@
 // Siren Response Quick Reference — All Scenarios (Adults)
 // SOP-6
 
+#import "@preview/fletcher:0.5.7": diagram, node, edge
+
 #let il-blue = rgb("#003893")
+
+// Flowchart colours
+#let clr-step = rgb("#e8eef7")
+#let clr-step-stroke = rgb("#003893")
+#let clr-decision = rgb("#fff8e1")
+#let clr-decision-stroke = rgb("#f5a623")
+#let clr-yes = rgb("#16a34a")
+#let clr-yes-fill = rgb("#f0fdf4")
+#let clr-no = rgb("#dc2626")
+#let clr-no-fill = rgb("#fef2f2")
+#let clr-terminal = rgb("#003893")
+
+#let action(word) = { text(weight: "bold", fill: il-blue, size: 9pt)[#upper(word)] }
+#let yes-label = rect(fill: clr-yes, radius: 10pt, inset: (x: 5pt, y: 1.5pt))[#text(fill: white, weight: "bold", size: 9pt)[Y]]
+#let no-label = rect(fill: clr-no, radius: 10pt, inset: (x: 5pt, y: 1.5pt))[#text(fill: white, weight: "bold", size: 9pt)[N]]
 
 #let page-badge = context {
   box(
@@ -38,7 +55,7 @@
       gutter: 0.4em,
       [
         #set text(font: "Roboto", size: 6pt, fill: rgb("#888"))
-        *SOP-6* · *v1.0* · *Rev:* 12 Mar 2026 · *By:* Daniel Rosehill + Claude Opus · Share freely with attribution \
+        *SOP-6* · *v2.0* · *Rev:* 18 Mar 2026 · *By:* Daniel Rosehill + Claude Opus · Share freely with attribution \
         *DISCLAIMER:* Not an official government resource. Use at your own risk. Based on HFC (Pikud HaOref) publications as of 12 Mar 2026. Official guidance: oref.org.il. Always wait 10 min.
       ],
       align(center)[
@@ -70,7 +87,95 @@
   ]
 ]
 
-#v(0.3em)
+#v(0.15em)
+
+// ============================================================
+// MAIN DECISION FLOWCHART: Where are you?
+// ============================================================
+
+#align(center)[
+#diagram(
+  spacing: (6mm, 3.5mm),
+  node-stroke: 1pt,
+  edge-stroke: 1.2pt,
+
+  // START
+  node((0, 0), align(center)[
+    *Red Alert sounds* \
+    Where are you?
+  ],
+    shape: rect, fill: clr-step, stroke: 1.5pt + clr-step-stroke,
+    width: 44mm, inset: 5pt, corner-radius: 5pt),
+
+  // Branch left: Indoors
+  edge((0, 0), (-1.2, 1), "->"),
+  node((-1.2, 1), align(center)[*Indoors?*],
+    shape: rect, fill: clr-decision, stroke: 1.5pt + clr-decision-stroke,
+    width: 30mm, inset: 4pt, corner-radius: 5pt),
+
+  // Branch centre: In a vehicle
+  edge((0, 0), (0, 1), "->"),
+  node((0, 1), align(center)[*In a vehicle?*],
+    shape: rect, fill: clr-decision, stroke: 1.5pt + clr-decision-stroke,
+    width: 30mm, inset: 4pt, corner-radius: 5pt),
+
+  // Branch right: Outside
+  edge((0, 0), (1.2, 1), "->"),
+  node((1.2, 1), align(center)[*Outside on foot?*],
+    shape: rect, fill: clr-decision, stroke: 1.5pt + clr-decision-stroke,
+    width: 30mm, inset: 4pt, corner-radius: 5pt),
+
+  // INDOORS → protected space
+  edge((-1.2, 1), (-1.2, 2), "->"),
+  node((-1.2, 2), align(center)[
+    #action[GO] to protected space \
+    (see SOP-8 priority order) \
+    Sit against inner wall \
+    #v(1pt)
+    *Wait 10 minutes*
+    #v(2pt)
+    #line(length: 100%, stroke: 1pt + clr-terminal)
+  ],
+    shape: rect, fill: clr-yes-fill, stroke: 1pt + clr-yes,
+    width: 44mm, inset: 5pt, corner-radius: 5pt),
+
+  // VEHICLE → exit
+  edge((0, 1), (0, 2), "->"),
+  node((0, 2), align(center)[
+    #action[STOP] vehicle, hazards on \
+    #action[EXIT] — no protection inside \
+    Enter nearest building, or \
+    lie face down, protect head \
+    #v(1pt)
+    *Wait 10 minutes*
+    #v(2pt)
+    #line(length: 100%, stroke: 1pt + clr-terminal)
+  ],
+    shape: rect, fill: clr-yes-fill, stroke: 1pt + clr-yes,
+    width: 44mm, inset: 5pt, corner-radius: 5pt),
+
+  // OUTSIDE → building or ground
+  edge((1.2, 1), (1.2, 2), "->"),
+  node((1.2, 2), align(center)[
+    #action[ENTER] nearest solid building \
+    Go to stairwell or inner room \
+    If no building: lie face down, \
+    protect head, away from vehicles \
+    #v(1pt)
+    *Wait 10 minutes*
+    #v(2pt)
+    #line(length: 100%, stroke: 1pt + clr-terminal)
+  ],
+    shape: rect, fill: clr-yes-fill, stroke: 1pt + clr-yes,
+    width: 44mm, inset: 5pt, corner-radius: 5pt),
+)
+]
+
+#v(0.25em)
+
+// ============================================================
+// DETAILED SCENARIOS (two-column reference)
+// ============================================================
 
 #let scenario(icon, name, steps, notes: ()) = {
   block(
@@ -113,7 +218,7 @@
     [Sit against *inner wall*, below window line, not facing door],
     [*Wait 10 minutes*],
   ),
-  notes: ("Never use kitchen/bathroom/toilet", "Never shelter in entrance lobby"),
+  notes: ("Never use kitchen/bathroom/toilet — ceramics and porcelain shatter", "Never shelter in entrance lobby"),
 )
 
 #scenario("🚗", "Driving",

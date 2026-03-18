@@ -11,7 +11,7 @@
       items: (
         (item: [Nearest *public shelter* — location identified], response: "CHECKED", note: "Check municipality website, building committee, or neighbours"),
         (item: [*Second* nearest shelter — location identified], response: "CHECKED", note: "Backup in case primary is locked or full"),
-        (item: [*Third* nearest shelter — location identified], response: "CHECKED", note: "May be a public building with a Mamam"),
+        (item: [*Third* nearest shelter — location identified], response: "CHECKED", note: "May be a public building with a Mamam (institutional protected room)"),
         (item: [Building *stairwell* assessed as fallback], response: "CHECKED", note: "Windowless? Which floor is safest? Clear of obstacles?"),
       ),
     ),

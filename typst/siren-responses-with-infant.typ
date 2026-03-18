@@ -1,7 +1,25 @@
 // Siren Response Quick Reference — With Infant (0–18 months)
 // SOP-7
 
+#import "@preview/fletcher:0.5.7": diagram, node, edge
+
 #let il-blue = rgb("#003893")
+
+// Flowchart colours
+#let clr-step = rgb("#e8eef7")
+#let clr-step-stroke = rgb("#003893")
+#let clr-decision = rgb("#fff8e1")
+#let clr-decision-stroke = rgb("#f5a623")
+#let clr-yes = rgb("#16a34a")
+#let clr-yes-fill = rgb("#f0fdf4")
+#let clr-no = rgb("#dc2626")
+#let clr-no-fill = rgb("#fef2f2")
+#let clr-terminal = rgb("#003893")
+#let clr-warning = rgb("#dc2626")
+
+#let action(word) = { text(weight: "bold", fill: il-blue, size: 9pt)[#upper(word)] }
+#let yes-label = rect(fill: clr-yes, radius: 10pt, inset: (x: 5pt, y: 1.5pt))[#text(fill: white, weight: "bold", size: 9pt)[Y]]
+#let no-label = rect(fill: clr-no, radius: 10pt, inset: (x: 5pt, y: 1.5pt))[#text(fill: white, weight: "bold", size: 9pt)[N]]
 
 #let page-badge = context {
   box(
@@ -38,7 +56,7 @@
       gutter: 0.4em,
       [
         #set text(font: "Roboto", size: 6pt, fill: rgb("#888"))
-        *SOP-7* · *v1.0* · *Rev:* 12 Mar 2026 · *By:* Daniel Rosehill + Claude Opus · Share freely with attribution \
+        *SOP-7* · *v2.0* · *Rev:* 18 Mar 2026 · *By:* Daniel Rosehill + Claude Opus · Share freely with attribution \
         *DISCLAIMER:* Not an official government resource. Use at your own risk. Based on HFC (Pikud HaOref) publications as of 12 Mar 2026. Official guidance: oref.org.il. Always wait 10 min.
       ],
       align(center)[
@@ -70,8 +88,9 @@
   ]
 ]
 
-#v(0.2em)
+#v(0.15em)
 
+// Rule #1 box
 #block(
   fill: rgb("#fef9e7"),
   width: 100%,
@@ -83,7 +102,131 @@
   #text(size: 7.5pt, fill: rgb("#7d6608"))[ Hold against your chest. Everything else is secondary. Leave the stroller behind.]
 ]
 
-#v(0.25em)
+#v(0.15em)
+
+// ============================================================
+// MAIN DECISION FLOWCHART: At home with infant
+// ============================================================
+
+#align(center)[
+#diagram(
+  spacing: (6mm, 3.5mm),
+  node-stroke: 1pt,
+  edge-stroke: 1.2pt,
+
+  // START
+  node((0, 0), align(center)[
+    *Red Alert sounds* \
+    #action[PICK UP] baby first
+  ],
+    shape: rect, fill: clr-step, stroke: 1.5pt + clr-step-stroke,
+    width: 48mm, inset: 5pt, corner-radius: 5pt),
+
+  edge((0, 0), (0, 1), "->"),
+
+  // Q1: Mamad?
+  node((0, 1), align(center)[
+    Do you have a *Mamad*?
+  ],
+    shape: rect, fill: clr-decision, stroke: 1.5pt + clr-decision-stroke,
+    width: 40mm, inset: 4pt, corner-radius: 5pt),
+
+  // YES → Mamad
+  edge((0, 1), (1.2, 1), "->",
+    label: yes-label,
+    label-side: center),
+
+  node((1.2, 1), align(center)[
+    #action[GO] to Mamad with baby \
+    Close blast door \
+    Sit, hold baby close \
+    Comfort: pacifier, feed, skin
+    #v(1pt)
+    *Wait 10 minutes*
+    #v(2pt)
+    #line(length: 100%, stroke: 1pt + clr-terminal)
+  ],
+    shape: rect, fill: clr-yes-fill, stroke: 1pt + clr-yes,
+    width: 46mm, inset: 5pt, corner-radius: 5pt),
+
+  // NO → shelter?
+  edge((0, 1), (0, 2), "->",
+    label: no-label,
+    label-side: center),
+
+  node((0, 2), align(center)[
+    Can you reach a *shelter* \
+    while carrying the baby?
+  ],
+    shape: rect, fill: clr-decision, stroke: 1.5pt + clr-decision-stroke,
+    width: 48mm, inset: 4pt, corner-radius: 5pt),
+
+  // YES → shelter
+  edge((0, 2), (1.2, 2), "->",
+    label: yes-label,
+    label-side: center),
+
+  node((1.2, 2), align(center)[
+    #action[GO] — baby against chest \
+    One arm for baby, one for doors \
+    Use baby carrier if by door
+    #v(1pt)
+    *Wait 10 minutes*
+    #v(2pt)
+    #line(length: 100%, stroke: 1pt + clr-terminal)
+  ],
+    shape: rect, fill: clr-yes-fill, stroke: 1pt + clr-yes,
+    width: 46mm, inset: 5pt, corner-radius: 5pt),
+
+  // NO → stairwell?
+  edge((0, 2), (0, 3), "->",
+    label: no-label,
+    label-side: center),
+
+  node((0, 3), align(center)[
+    Inner *stairwell* available?
+  ],
+    shape: rect, fill: clr-decision, stroke: 1.5pt + clr-decision-stroke,
+    width: 40mm, inset: 4pt, corner-radius: 5pt),
+
+  edge((0, 3), (1.2, 3), "->",
+    label: yes-label,
+    label-side: center),
+
+  node((1.2, 3), align(center)[
+    Centre of stairwell, sit down \
+    Shield baby with your body
+    #v(1pt)
+    *Wait 10 minutes*
+    #v(2pt)
+    #line(length: 100%, stroke: 1pt + clr-terminal)
+  ],
+    shape: rect, fill: clr-yes-fill, stroke: 1pt + clr-yes,
+    width: 46mm, inset: 5pt, corner-radius: 5pt),
+
+  // NO → inner room
+  edge((0, 3), (0, 4), "->",
+    label: no-label,
+    label-side: center),
+
+  node((0, 4), align(center)[
+    *Innermost room*, floor, \
+    inner wall, curl over baby
+    #v(1pt)
+    *Wait 10 minutes*
+    #v(2pt)
+    #line(length: 100%, stroke: 1pt + clr-terminal)
+  ],
+    shape: rect, fill: clr-no-fill, stroke: 1pt + clr-no,
+    width: 48mm, inset: 5pt, corner-radius: 5pt),
+)
+]
+
+#v(0.2em)
+
+// ============================================================
+// DETAILED SCENARIOS (two-column reference)
+// ============================================================
 
 #let scenario(icon, name, steps, notes: ()) = {
   block(
@@ -108,28 +251,6 @@
 
 #columns(2, gutter: 0.8em)[
 
-#scenario("🏠", "At Home — WITH Mamad",
-  (
-    [*Scoop up* baby, go to Mamad],
-    [*Close* blast door (partner seals if present)],
-    [Sit against *inner wall*, hold baby close],
-    [Comfort: *pacifier*, feed, skin contact],
-    [*Wait 10 minutes*],
-  ),
-  notes: ("Keep baby supplies stashed in Mamad: nappies, wipes, pacifier, bottle",),
-)
-
-#scenario("🏠", "At Home — WITHOUT Mamad",
-  (
-    [*Pick up* baby — do not put down until in shelter],
-    [Shelter reachable? *Go*. Hold baby against chest, one arm free for doors],
-    [No shelter? *Stairwell* centre (not top/ground floor), sit and shield baby],
-    [No stairwell? *Innermost room*, floor, inner wall, curl over baby],
-    [*Wait 10 minutes*],
-  ),
-  notes: ("Pre-position a baby carrier by the door for hands-free evacuation",),
-)
-
 #scenario("🌙", "Night — Baby Sleeping, No Mamad",
   (
     [Go straight to baby's room, *pick them up*],
@@ -138,10 +259,10 @@
     [Shelter or stairwell or inner room — *hold baby*, sit down],
     [*Wait 10 minutes* — baby may cry, that's OK],
   ),
-  notes: ("Pre-pack a blanket to grab with baby", "Room-share during escalations = faster response"),
+  notes: ("Pre-pack a blanket to grab with baby", "Room-share during escalations for faster response"),
 )
 
-#scenario("🚶", "Outside / Walking",
+#scenario("🚶", "Outside / Walking with Stroller",
   (
     [Take baby *OUT of stroller* — hold against chest],
     [*LEAVE* the stroller behind],
@@ -149,10 +270,8 @@
     [If no building: *lie face down*, baby under you, shield with body],
     [*Wait 10 minutes*],
   ),
-  notes: ("Baby carrier >> stroller for siren readiness outdoors", "Know shelters on regular routes"),
+  notes: ("Baby carrier is better than stroller for siren readiness outdoors", "Know shelters on regular routes"),
 )
-
-#colbreak()
 
 #scenario("🚗", "Driving — Baby in Car Seat",
   (
@@ -164,6 +283,8 @@
   ),
   notes: ("Practise unbuckling the harness quickly", "Two adults: one grabs baby, one grabs nappy bag"),
 )
+
+#colbreak()
 
 #scenario("🚌", "On a Bus",
   (
@@ -184,7 +305,7 @@
     [Sit against *inner wall*, shield baby, away from glass],
     [*Wait 10 minutes*],
   ),
-  notes: ("At Tipat Halav/clinic: ask staff for shelter immediately", "You can carry while breastfeeding"),
+  notes: ("At Tipat Halav (baby clinic): ask staff for shelter immediately", "You can carry while breastfeeding"),
 )
 
 #v(0.3em)

@@ -44,7 +44,7 @@
         (item: [*Hygiene* kit], response: "CHECKED", actions: ("toilet paper", "wipes", "nappies", "sanitiser"), note: ""),
         (item: [*Activities* for children], response: "CHECKED", note: "Colouring books, games, stationery — shelter waits are long for kids"),
         (item: [*Fire extinguisher* + smoke detector], response: "CHECKED", note: ""),
-        (item: [*Gas supply*], response: "CHECKED", note: "Private: spare tank full. Shared building: tank > half full"),
+        (item: [*Gas supply*], response: "CHECKED", note: "Private home: ensure spare tank is full. Shared building: verify communal tank is more than half full"),
       ),
     ),
     (

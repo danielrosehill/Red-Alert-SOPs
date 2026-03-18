@@ -14,7 +14,7 @@
         (item: [No *light penetration* when door is sealed], response: "VERIFIED", note: "Indicates proper seal"),
         (item: [Door *rubber insulation* present and not dried out], response: "VERIFIED", note: "Replace if cracked or brittle"),
         (item: [*Steel outer window* opens and closes easily], response: "VERIFIED", note: ""),
-        (item: [*Glass inner window* functions correctly], response: "VERIFIED", note: "Single-wing: double lock works. Double-wing: remove only during emergency times"),
+        (item: [*Glass inner window* functions correctly], response: "VERIFIED", note: "Single-wing: verify both locks engage. Double-wing: remove both wings during escalation periods and store outside room"),
         (item: [*Ventilation pipes* — rubber insulation intact], response: "VERIFIED", note: "Steel cover screws tighten fully"),
       ),
     ),
